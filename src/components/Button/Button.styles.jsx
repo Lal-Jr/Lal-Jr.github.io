@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 
 export const Button = styled(Link)`
-    border-radius: 50px;
     background: transparent;
     white-space: nowrap;
     padding: 12px 30px;
-    color: #000;
+    color: #fff;
     font-size: 16px;
+    letter-spacing: 1.5px;
     text-decoration: none;
     border: 2px solid #fff;
     cursor: pointer;
@@ -17,12 +17,12 @@ export const Button = styled(Link)`
     align-items: center;
     transition: all 0.2s ease-in-out;
     font-weight: bold;
+    border-radius: 50px;
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #3385ff;
+        background: #46caca;
         color: #fff;
-        border: 2px solid #3385ff;
-        
+        border: 2px solid #46caca;
     }
 `;

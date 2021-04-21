@@ -1,6 +1,7 @@
 import React from 'react';
-import { HeroContainer, HeroRow, HeroTextWrapper, Title, ButtonWrapper, Divider, HeroImageWrapper } from './HeroSection.styles.jsx';
+import { HeroContainer, HeroRow, HeroTextWrapper, ButtonWrapper, Title, Highlight } from './HeroSection.styles.jsx';
 import { Button } from '../Button/Button.styles.jsx';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 function HeroSection()
 {
@@ -9,20 +10,15 @@ function HeroSection()
             <HeroContainer>
                 <HeroRow>
                     <HeroTextWrapper>
-                        <Title>Redefining your</Title> 
-                        <Title>career ahead!</Title>
+                        <Title>Hello, I'm <Highlight>Harish Lal</Highlight>.</Title>
+                        <Title>I'm a <Highlight>Front-End</Highlight> Developer.</Title>
                         <ButtonWrapper>
-                            <Button to='/upcomingevents'>Upcoming Events</Button>
-                            <Divider />
-                            <Button to='/stories'>Sneak Peak</Button>
+                            <Button to='/works'>View my work<AiOutlineArrowRight /> </Button>
                         </ButtonWrapper>
                     </HeroTextWrapper>
-                    <HeroImageWrapper>
-                        {/* <img src={image} alt='hero-img'/> */}
-                    </HeroImageWrapper>
                 </HeroRow>
             </HeroContainer>
         </>
     );
 }
-export default HeroSection;
+export default HeroSection; 
