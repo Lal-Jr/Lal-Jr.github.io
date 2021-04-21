@@ -11,7 +11,7 @@ function HeroSection()
                 <HeroRow>
                     <HeroTextWrapper>
                         <Title>Hello, I'm <Highlight>Harish Lal</Highlight>.</Title>
-                        <Title>I'm a <Highlight>Front-End</Highlight> Developer.</Title>
+                        <Title>I'm a <Highlight>Front-End</Highlight>Web Developer.</Title>
                         <ButtonWrapper>
                             <Button to='/works'>View my work<AiOutlineArrowRight /> </Button>
                         </ButtonWrapper>

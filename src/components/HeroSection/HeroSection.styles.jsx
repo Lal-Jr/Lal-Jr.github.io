@@ -41,7 +41,6 @@ export const Title = styled.h1`
 export const ButtonWrapper = styled.div`
     display: flex;
     justify-content: center;
-    padding: 20px 0px 0px 20px;
 `
 
 export const Highlight = styled.div`
