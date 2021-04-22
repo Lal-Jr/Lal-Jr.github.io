@@ -2,8 +2,8 @@ import React from 'react';
 import { HeroContainer, HeroRow, HeroTextWrapper, ButtonWrapper, Title, Highlight, SocialMediaIconWrapper, SocialButton, Icon, FaI, FaT, FaG, FaL, Span } from './HeroSection.styles.jsx';
 import { Button } from '../Button/Button.styles.jsx';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import './styles.css';
-import pdf from './Resume.pdf';
+import '../../assests/styles.css';
+import pdf from '../../assests/Resume.pdf';
 
 function HeroSection()
 {   

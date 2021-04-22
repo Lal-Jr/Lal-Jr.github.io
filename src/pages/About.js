@@ -1,7 +1,10 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection';
+// import Navbar from '../components/Navbar';
+// import Sidebar from '../components/Sidebar';
+import AboutSection from '../components/AboutSection';
+// import Footer from '../components/Footer';
 
-const Home = () => {
+const About = () => {
     // const [isOpen, setIsOpen] = useState(false)
 
     // const toggle = () => {
@@ -12,11 +15,11 @@ const Home = () => {
         <>
             {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
             {/* <Navbar toggle={toggle} /> */}
-            <HeroSection />
+            <AboutSection />
             {/* <Footer /> */}
             {/* { useState} */}
         </>
     )
 }
 
-export default Home;
+export default About;
