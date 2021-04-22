@@ -1,14 +1,9 @@
 import styled from 'styled-components';
-// import background from '../../images/background.jpg';
+import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+
 
 export const HeroContainer = styled.div`
-    
-    background-repeat: no-repeat;
-    background-size: 1920px 980px;
-    height: 100vh;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+    height: 100vh;    
 `
 
 export const HeroRow = styled.div`
@@ -54,4 +49,70 @@ export const Highlight = styled.div`
         -webkit-text-stroke-width: 0px;
         cursor: pointer;
     }
+`
+
+export const SocialMediaIconWrapper = styled.div`
+    margin: 0;
+    padding: 0;
+    box-sozing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    // display: flex;
+    // flex-direction: column;
+`
+
+export const SocialButton = styled.div`
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 5px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+
+    &:hover{
+        width: 200px;
+    }
+`
+
+export const Icon = styled.div`
+    display: inline-flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    justify-content: center;
+    align-items: center;
+`
+export const FaI = styled(FaInstagram)`
+    font-size: 25px;
+    line-height: 60px;
+`
+export const FaT = styled(FaTwitter)`
+    font-size: 25px;
+    line-height: 60px;
+`
+export const FaG = styled(FaGithub)`
+    font-size: 25px;
+    line-height: 60px;
+`
+export const FaL = styled(FaLinkedin)`
+    font-size: 25px;
+    line-height: 60px;
+`
+
+export const Span = styled.span`
+    font-size: 20px;
+    font-weight: bold;
+    // line-height: 60px;
+    margin-left: 10px;
+    display: inline-flex;
+    align-content: center;
 `

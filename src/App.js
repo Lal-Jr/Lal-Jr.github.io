@@ -5,9 +5,6 @@ import Home from './pages/Home';
 function App() {
   return (
     <Router>
-      <div id='stars'></div>
-      <div id='stars2'></div>
-      <div id='stars3'></div>
       <Switch>
         <Route path='/Portfolio-Website/' exact component={Home} />
       </Switch>
