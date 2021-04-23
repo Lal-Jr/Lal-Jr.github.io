@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
+import { AiOutlineArrowRight } from 'react-icons/ai'; 
 
 export const HeroContainer = styled.div`
-    height: 100vh;    
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
 `
 
 export const HeroRow = styled.div`
@@ -63,6 +66,17 @@ export const SocialMediaIconWrapper = styled.div`
     // flex-direction: column;
 `
 
+export const Icon = styled.div`
+    display: inline-flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    justify-content: center;
+    align-items: center;
+`
+
 export const SocialButton = styled.div`
     display: inline-block;
     height: 60px;
@@ -78,19 +92,14 @@ export const SocialButton = styled.div`
 
     &:hover{
         width: 200px;
+        ${Icon}{
+            color: #fff;
+            background: #1b2735;
+            transition: all 0.2s ease-in-out;
+        }
     }
 `
 
-export const Icon = styled.div`
-    display: inline-flex;
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    justify-content: center;
-    align-items: center;
-`
 export const FaI = styled(FaInstagram)`
     font-size: 25px;
     line-height: 60px;
@@ -116,3 +125,66 @@ export const Span = styled.span`
     display: inline-flex;
     align-content: center;
 `
+
+export const Arrow = styled(AiOutlineArrowRight)`
+    margin-left: 5px;
+`
+
+export const Resume = styled(Link)`
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    background: transparent;
+    white-space: nowrap;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #46caca;
+        color: #fff;
+        border: 2px solid #46caca;
+        ${Arrow}{
+            transform: translateX(5px);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+`
+
+export const Button = styled(Link)`
+    background: transparent;
+    white-space: nowrap;
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #46caca;
+        color: #fff;
+        border: 2px solid #46caca;
+        ${Arrow}{
+            transform: rotate(90deg);
+            transition: all 0.4s ease-in-out;
+        }
+    }
+`;

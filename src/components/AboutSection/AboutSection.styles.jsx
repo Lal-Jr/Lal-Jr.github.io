@@ -4,7 +4,7 @@ export const AboutContainer = styled.div`
     padding: 0px 0px 50px 0px;
     box-shadow: 15px 0px 30px 0.5px rgba(127, 137, 161, 0.25);
     clip-path: inset(0px 0px -15px 0px);
-    color: #0a192f ;
+    color: #fff ;
     height: 100vh;
 `
 export const AboutRow = styled.div`
@@ -22,8 +22,8 @@ export const AboutColumn = styled.div`
 
 export const Title = styled.h1`
     text-align: center;
-    padding: 50px 0px 20px 0px;
-    font-size: 36px;
+    padding: 100px 0px 20px 0px;
+    font-size: 40px;
     color: #283d50;
     font-weight: 500;
 `

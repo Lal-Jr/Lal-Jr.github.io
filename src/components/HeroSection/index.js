@@ -1,25 +1,23 @@
 import React from 'react';
-import { HeroContainer, HeroRow, HeroTextWrapper, ButtonWrapper, Title, Highlight, SocialMediaIconWrapper, SocialButton, Icon, FaI, FaT, FaG, FaL, Span } from './HeroSection.styles.jsx';
-import { Button } from '../Button/Button.styles.jsx';
-import { AiOutlineArrowRight } from 'react-icons/ai';
-import '../../assests/styles.css';
+import { HeroContainer, HeroRow, HeroTextWrapper, ButtonWrapper, Title, Highlight, SocialMediaIconWrapper, SocialButton, Icon, FaI, FaT, FaG, FaL, Span, Resume, Arrow, Button } from './HeroSection.styles.jsx';
+import './Animation.jsx';
 import pdf from '../../assests/Resume.pdf';
 
 function HeroSection()
 {   
     return (
         <>
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
             <HeroContainer>
                 <HeroRow>
                     <HeroTextWrapper>
                         <Title>Hello, I'm <Highlight>Harish Lal</Highlight>.</Title>
                         <Title>I'm a <Highlight>Front-End</Highlight>Web Developer.</Title>
                         <ButtonWrapper>
-                            <Button to={pdf} target="_blank">My Resume
-                                    <AiOutlineArrowRight />
+                            <Resume to={pdf} target="_blank">My Resume
+                                    <Arrow />
+                            </Resume>
+                            <Button to='/'>My Works
+                                    <Arrow />
                             </Button>
                         </ButtonWrapper>
                         <SocialMediaIconWrapper>
