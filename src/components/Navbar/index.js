@@ -12,7 +12,7 @@ function Navbar({ toggle }) {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
-        if (window.scrollY >= 750){
+        if (window.scrollY >= 955){
             setScrollNav(true);
         }
         else {
@@ -23,7 +23,7 @@ function Navbar({ toggle }) {
     useEffect(() => {
         window.addEventListener('scroll', changeNav);
     }, []);
-
+ 
     const toggleHome = () => {
         scroll.scrollToTop();
     }
@@ -38,13 +38,37 @@ function Navbar({ toggle }) {
                     <NavItem onClick={toggleHome}>
                         Home
                     </NavItem>
-                    <NavItem to='#about' onClick={closeMenu}>
+                    <NavItem 
+                        activeClass="active"
+                        to='about'
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={800}
+                        onClick={closeMenu}
+                    >
                         About Us
                     </NavItem>
-                    <NavItem to='#works' onClick={closeMenu}>
+                    <NavItem
+                        activeClass="active"
+                        to='work'
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={800}
+                        onClick={closeMenu}
+                    >
                         My Works
                     </NavItem>
-                    <NavItem to='#contactme' onClick={closeMenu}>
+                    <NavItem
+                        activeClass="active"
+                        to='contact'
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={800}
+                        onClick={closeMenu}
+                    >
                         Contact Me
                     </NavItem>
                 </NavMenu>

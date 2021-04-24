@@ -5,7 +5,7 @@ function AboutSection()
 {
     return (
         <>
-            <AboutContainer>
+            <AboutContainer id='about'>
                 <Title>
                     About
                 </Title>

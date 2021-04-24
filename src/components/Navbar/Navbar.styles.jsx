@@ -47,8 +47,13 @@ export const NavItem = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   color: #fff; 
+  cursor: pointer;
 
   &:hover{
+    color: #46caca;
+  }
+
+  &:active{
     color: #46caca;
   }
 `

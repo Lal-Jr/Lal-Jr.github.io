@@ -5,7 +5,7 @@ function WorkSection()
 {
     return (
         <>
-            <WorkContainer>
+            <WorkContainer id='work'>
                 <Title>
                     My Works
                 </Title>

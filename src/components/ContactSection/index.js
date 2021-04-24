@@ -5,7 +5,7 @@ function ContactSection()
 {
     return (
         <>
-            <ContactContainer>
+            <ContactContainer id='contact'>
                 <Title>
                     Contact Me
                 </Title>
