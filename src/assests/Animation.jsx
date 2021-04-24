@@ -52,7 +52,7 @@ export const Stars3 = styled.div`
     animation: ${animStar} 150s linear infinite;
 
     &:after {
-            content: "e";
+            content: "";
             position: absolute;
             top: 2000px;
             background: transparent;

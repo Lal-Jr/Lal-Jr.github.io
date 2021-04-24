@@ -64,7 +64,7 @@ function Navbar({ toggle }) {
                         activeClass="active"
                         to='contact'
                         spy={true}
-                        smooth={true}
+                        smooth={true} 
                         offset={0}
                         duration={800}
                         onClick={closeMenu}
