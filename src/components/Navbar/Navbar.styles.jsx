@@ -2,14 +2,15 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const NavBar = styled.div`
-  background: transparent ;
-  height: ${({ scrollNav }) => (scrollNav ? '-80px' : '80px')};
+  background: transparent;
+  height: 80px;
+  opacity: ${({ scrollNav }) => (scrollNav ? '1' : '0')};
   display: flex;
   position: fixed;
   margin: 0;
   padding: 0;
-  width: 120vw;
-  // box-shadow: ${({ scrollNav }) => (scrollNav ? '0px 0px 30px rgba(127, 137, 161, 0.25)' : '0')};
+  width: 100vw;
+  transition: all 0.2s ease-in-out;
 `
 
 export const Hamburger = styled.div`
@@ -28,13 +29,15 @@ export const NavMenu = styled.div`
   margin-right: 4rem;
 `
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled.div`
+  display: block;
   color: #fff;
   cursor: pointer;
   margin-left: 4rem;
+  margin-top: 1.5rem;
 `
 
-export const NavItem = styled.div`
+export const NavItem = styled(Link)`
   display: block;
   position: relative;
   display: flex;
@@ -42,10 +45,11 @@ export const NavItem = styled.div`
   height: 80px;
   font-size: 16px;
   font-weight: bold;
-`
-
-export const NavLinks = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
-  color: #fff;
+  color: #fff; 
+
+  &:hover{
+    color: #46caca;
+  }
 `

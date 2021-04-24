@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { AiOutlineArrowRight } from 'react-icons/ai'; 
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export const HeroContainer = styled.div`
     height: 100vh;

@@ -1,8 +1,7 @@
 import React from 'react';
 import { HeroContainer, HeroRow, HeroTextWrapper, ButtonWrapper, Title, Highlight, SocialMediaIconWrapper, SocialButton, Icon, FaI, FaT, FaG, FaL, Span, Resume, Arrow, Button } from './HeroSection.styles.jsx';
-import { Stars, Stars2, Stars3 } from './Animation';
+import { Stars, Stars2, Stars3 } from '../../assests/Animation.jsx'
 import pdf from '../../assests/Resume.pdf';
-// import '../../assests/styles.css';
 
 function HeroSection()
 {   
