@@ -35,16 +35,16 @@ function Navbar({ toggle }) {
                     <h1>LALJR</h1>
                 </NavLogo>
                 <NavMenu>
-                    <NavItem to='/Portfolio-Website/' onClick={toggleHome}>
+                    <NavItem onClick={toggleHome}>
                         Home
                     </NavItem>
-                    <NavItem to='/Portfolio-Website/' onClick={closeMenu}>
+                    <NavItem to='#about' onClick={closeMenu}>
                         About Us
                     </NavItem>
-                    <NavItem to='/Portfolio-Website/' onClick={closeMenu}>
-                        Works
+                    <NavItem to='#works' onClick={closeMenu}>
+                        My Works
                     </NavItem>
-                    <NavItem to='/Portfolio-Website/' onClick={closeMenu}>
+                    <NavItem to='#contactme' onClick={closeMenu}>
                         Contact Me
                     </NavItem>
                 </NavMenu>

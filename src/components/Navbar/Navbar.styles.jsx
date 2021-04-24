@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
 export const NavBar = styled.div`
@@ -38,7 +38,6 @@ export const NavLogo = styled.div`
 `
 
 export const NavItem = styled(Link)`
-  display: block;
   position: relative;
   display: flex;
   align-items: center;
