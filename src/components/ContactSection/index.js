@@ -1,5 +1,6 @@
 import React from 'react';
 import { ContactContainer, Title, Content, Button, Label, Input, Para, Form, FormField } from './ContactSection.styles.jsx';
+import FooterContainer from '../Footer/index.js';
 
 function ContactSection()
 {
@@ -31,6 +32,7 @@ function ContactSection()
                     </Form>
                     <Para>HARISH LAL © 2021</Para>
                 </Content>
+                <FooterContainer />
             </ContactContainer>
         </>
     );

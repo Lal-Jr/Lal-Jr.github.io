@@ -1,35 +1,37 @@
+import portfolio from '../assests/Images/Portfolio.png'
+
 export const cardObjOne = {
-    title: 'Card Title',
-    img: '',
+    title: 'Portfolio',
+    img: {portfolio},
     body: 'lorem ipsum',
 }
 
 export const cardObjTwo = {
-    title: 'Card Title',
+    title: 'Netflix Clone',
     img: '',
     body: 'lorem ipsum',
 }
 
 export const cardObjThree = {
-    title: 'Card Title',
+    title: 'E-Commerce',
     img: '',
     body: 'lorem ipsum',
 }
 
 export const cardObjFour = {
-    title: 'Card Title',
+    title: 'Music Player',
     img: '',
     body: 'lorem ipsum',
 }
 
 export const cardObjFive = {
-    title: 'Card Title',
+    title: 'Chat Application',
     img: '',
     body: 'lorem ipsum',
 }
 
 export const cardObjSix = {
-    title: 'Card Title',
+    title: 'Monsters Rolodex',
     img: '',
     body: 'lorem ipsum',
 }

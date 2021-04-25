@@ -38,7 +38,7 @@ function Navbar({ toggle }) {
                         Home
                     </NavItem>
                     <NavItem 
-                        activeClass='active'
+                        activeClassName='active'
                         to='about'
                         spy={true}
                         smooth={true}
@@ -49,7 +49,7 @@ function Navbar({ toggle }) {
                         About Us
                     </NavItem>
                     <NavItem
-                        activeClass='active'
+                        activeClassName='active'
                         to='work'
                         spy={true}
                         smooth={true}
@@ -60,7 +60,7 @@ function Navbar({ toggle }) {
                         My Works
                     </NavItem>
                     <NavItem
-                        activeClass='active'
+                        activeClassName='active'
                         to='contact'
                         spy={true}
                         smooth={true} 

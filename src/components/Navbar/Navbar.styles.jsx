@@ -52,11 +52,7 @@ export const NavItem = styled(Link)`
   color: #fff; 
   cursor: pointer;
 
-  &:hover{
-    color: #46caca;
-  }
-
-  &:active{
+  &:hover, &:active{
     color: #46caca;
   }
 `
