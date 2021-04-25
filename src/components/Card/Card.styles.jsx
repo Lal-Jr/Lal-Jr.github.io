@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
     display: block;
-    width: 350px;
-    height: 250px;
+    width: auto;
+    height: 300px;
     transition: all .3s ease-in-out;
     background: rgba(255,255,255,0.25);
-    box-shadow: 0 8px 32px 0 rgba(31,31,135,0.37);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255,255,255,0.18);

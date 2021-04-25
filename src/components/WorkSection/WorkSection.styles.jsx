@@ -18,7 +18,7 @@ export const Content = styled.div`
     padding: 0px 50px;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-gap: 5px;
+    grid-gap: 20px;
 `
 
 export const Divider = styled.div`

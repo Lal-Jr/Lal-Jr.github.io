@@ -42,7 +42,7 @@ export const ButtonWrapper = styled.div`
     justify-content: center;
 `
 
-export const Highlight = styled.div`
+export const Highlight = styled(LinkS)`
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1.5px;
     display: inline-block;
@@ -158,34 +158,6 @@ export const Resume = styled(LinkR)`
         ${Arrow}{
             transform: translateX(5px);
             transition: all 0.3s ease-in-out;
-        }
-    }
-`
-
-export const Button = styled(LinkS)`
-    background: transparent;
-    white-space: nowrap;
-    padding: 12px 30px;
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: 1.2px;
-    text-decoration: none;
-    border: 2px solid #fff;
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    font-weight: bold;
-
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #46caca;
-        color: #fff;
-        border: 2px solid #46caca;
-        ${Arrow}{
-            transform: rotate(90deg);
-            transition: all 0.4s ease-in-out;
         }
     }
 `;
