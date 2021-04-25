@@ -9,7 +9,7 @@ function WorkSection()
         <>
             <WorkContainer id='work'>
                 <Title>
-                    My Works
+                    Works
                 </Title>
                 <Content>
                     <Card {...cardObjOne} />

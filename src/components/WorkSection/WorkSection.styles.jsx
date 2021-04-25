@@ -12,6 +12,7 @@ export const Title = styled.h1`
     font-size: 40px;
     color: #46caca;
     font-weight: bold;
+    text-transform: uppercase;
 `
 export const Content = styled.div`
     margin: 0px 150px;
