@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export const HeroContainer = styled.div`
@@ -130,7 +131,7 @@ export const Arrow = styled(AiOutlineArrowRight)`
     margin-left: 5px;
 `
 
-export const Resume = styled(Link)`
+export const Resume = styled(LinkR)`
     position: absolute;
     right: 2rem;
     top: 2rem;
@@ -161,7 +162,7 @@ export const Resume = styled(Link)`
     }
 `
 
-export const Button = styled(Link)`
+export const Button = styled(LinkS)`
     background: transparent;
     white-space: nowrap;
     padding: 12px 30px;

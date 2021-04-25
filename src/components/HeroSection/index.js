@@ -7,7 +7,7 @@ function HeroSection()
 {   
     return (
         <>  
-            <HeroContainer>
+            <HeroContainer id='home'>
                 <Stars />
                 <Stars2 />
                 <Stars3 />
@@ -19,7 +19,14 @@ function HeroSection()
                             <Resume to={pdf} target="_blank">My Resume
                                     <Arrow />
                             </Resume>
-                            <Button to='/'>My Works
+                            <Button 
+                                activeClass='active'
+                                to='work'
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={800}
+                            >My Works
                                     <Arrow />
                             </Button>
                         </ButtonWrapper>

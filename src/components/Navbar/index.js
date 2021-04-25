@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
-// import { Link as LinkS } from 'react-scroll';
 import { NavItem, NavLogo, NavMenu, NavBar, Hamburger } from './Navbar.styles.jsx';
 
 function Navbar({ toggle }) {
@@ -12,7 +11,7 @@ function Navbar({ toggle }) {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
-        if (window.scrollY >= 955){
+        if (window.scrollY >= window.innerHeight){
             setScrollNav(true);
         }
         else {
@@ -39,7 +38,7 @@ function Navbar({ toggle }) {
                         Home
                     </NavItem>
                     <NavItem 
-                        activeClass="active"
+                        activeClass='active'
                         to='about'
                         spy={true}
                         smooth={true}
@@ -50,7 +49,7 @@ function Navbar({ toggle }) {
                         About Us
                     </NavItem>
                     <NavItem
-                        activeClass="active"
+                        activeClass='active'
                         to='work'
                         spy={true}
                         smooth={true}
@@ -61,7 +60,7 @@ function Navbar({ toggle }) {
                         My Works
                     </NavItem>
                     <NavItem
-                        activeClass="active"
+                        activeClass='active'
                         to='contact'
                         spy={true}
                         smooth={true} 

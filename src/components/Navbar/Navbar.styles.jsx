@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
-import media from '../../assets/Media';
+// import media from '../../assets/Media';
 
 export const NavBar = styled.div`
   background: transparent;
@@ -17,18 +17,6 @@ export const NavBar = styled.div`
 export const Hamburger = styled.div`
   color: #fff;
   display: none;
-
-  ${media.phone`
-    display: block;
-    position: fixed;
-    padding-top: 5px;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #000;
-  `}
 `
 
 export const NavMenu = styled.div`

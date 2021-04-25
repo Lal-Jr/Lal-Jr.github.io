@@ -13,11 +13,11 @@ export const Title = styled.h1`
     color: #46caca;
     font-weight: bold;
 `
-export const SubText = styled.p`
+export const Content = styled.div`
     margin: 0px 150px;
     padding: 0px 50px;
     line-height: 1.6;
     justify-content: center;
-    align-items: start;
+    text-align: center;
     color: #fff;
 `
