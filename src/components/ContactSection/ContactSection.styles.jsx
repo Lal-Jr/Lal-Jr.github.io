@@ -23,89 +23,82 @@ export const Content = styled.div`
     justify-content: center;
     text-align: center;
     color: #fff;
+    display: flex;
+    flex-direction: column;
 `
 
-export const Box = styled.div`
+export const Form = styled.form`
+    margin: 0px 500px;
 `
 
-export const Group = styled.div`
+export const Para = styled.p`
+    position: relative;
+    text-align: center;
+    font-family: Lusitana, serif;
+    font-size: 16px;
+    line-height: 21px;
+    top: 2rem;
+    width: 100%;
+`
+export const FormField = styled.div.attrs({
+    class: "input-text js-input"
+})`
+    position: relative;
+    margin: 32px 0;
 `
 
-export const Name = styled.div`
+export const Label = styled.label.attrs({
+    class: "label"
+})`
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-family: Lusitana, serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #46caca;
+    cursor: text;
+    transform .2s ease -in -out;
 `
 
-export const Email = styled.div`
+export const Button = styled.button.attrs({
+    class: "submit",
+    type:"submit",
+    value:"Submit"
+})`
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
 `
 
-// .contact-form {
-//    .form-field {
-//         position: relative;
-//         margin: 32px 0;
-//     }
-//    .input-text {
-//         display: block;
-//         width: 100 %;
-//         height: 36px;
-//         border - width: 0 0 2px 0;
-//         border - color: #000;
-//         font - family: Lusitana, serif;
-//         font - size: 18px;
-//         line - height: 26px;
-//         font - weight: 400;
-      
-//       &:focus{
-//             outline: none;
-//         }
-      
-//       &: focus,&.not - empty {
-//                  + .label {
-//                      transform: translateY(-24px);
-//                  }
-//         }
-//     }
-//     .label {
-//         position: absolute;
-//         left: 20px;
-//         bottom: 11px;
-//         font - family: Lusitana, serif;
-//         font - size: 18px;
-//         line - height: 26px;
-//         font - weight: 400;
-//         color: #888;
-//         cursor: text;
-//         transition: transform .2s ease -in -out;
-//     }
-   
-//      .submit btn {
-//         display: inline - block;
-//         background - color: #000;
-//         color: #fff;
-//         font - family: Raleway, sans - serif;
-//         text - transform: uppercase;
-//         letter - spacing: 2px;
-//         font - size: 16px;
-//         line - height: 24px;
-//         padding: 8px 16px;
-//         border: none;
-//         cursor: pointer;
-//     }
-// }
+export const Input = styled.input.attrs({
+    class: "input-text js-input"
+})`
+    display: block;
+    width: 100%;
+    height: 46px;
+    border-width: 0 0 2px 0;
+    border-color: #fff;
+    font-family: Spartan, sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    background: transparent;
+    color: #fff;
 
-// .note {
-//     position: absolute;
-//     left: 0;
-//     bottom: 10px;
-//     width: 100 %;
-//     text - align: center;
-//     font - family: Lusitana, serif;
-//     font - size: 16px;
-//     line - height: 21px;
-   
-//    .link {
-//         color: #888;
-//         text - decoration: none;
-//       &: hover {
-//             text - decoration: underline;
-//         }
-//     }
-// }
+    &:focus {
+        outline: none;
+        +${Label} {
+            transform: translateY(-24px);
+        }
+      }
+`

@@ -5,7 +5,7 @@ export const CardContainer = styled.div`
     width: auto;
     height: 300px;
     transition: all .3s ease-in-out;
-    background: rgba(255,255,255,0.25);
+    background: rgba(30,30,30,0.25);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255,255,255,0.18);

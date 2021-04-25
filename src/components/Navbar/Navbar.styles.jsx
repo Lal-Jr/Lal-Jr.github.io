@@ -3,7 +3,6 @@ import styled from 'styled-components';
 // import media from '../../assets/Media';
 
 export const NavBar = styled.div`
-  // background: transparent;
   background: rgba(30,30,30,0.25);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
