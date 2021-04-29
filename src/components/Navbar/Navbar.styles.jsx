@@ -32,12 +32,13 @@ export const NavMenu = styled.div`
   margin-right: 4rem;
 `
 
-export const NavLogo = styled.div`
+export const NavLogo = styled.h1`
   display: block;
   color: #fff;
   cursor: pointer;
   margin-left: 4rem;
   margin-top: 1.5rem;
+  font-family: 'Fredericka the Great', cursive;
 `
 
 export const NavItem = styled(Link)`
@@ -49,10 +50,10 @@ export const NavItem = styled(Link)`
   font-weight: bold;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  color: #fff; 
   cursor: pointer;
+  color: #fff;
 
-  &:hover, &:active{
+  &:hover{
     color: #46caca;
   }
 `

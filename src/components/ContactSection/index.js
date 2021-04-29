@@ -10,22 +10,22 @@ function ContactSection()
                 <Title>
                     Contact
                 </Title>
-                <Content class="contact-form row">
+                <Content className="contact-form row">
                     <Form>
-                        <FormField class="form-field">
-                            <Input id="name" class="input-text js-input" type="text" required /> 
-                                <Label class="label" for="name">Name</Label>
+                        <FormField className="form-field">
+                            <Input id="name" className="input-text js-input" type="text" required /> 
+                                <Label className="label" for="name">Name</Label>
                         </FormField>
-                        <FormField class="form-field">
-                            <Input id="email" class="input-text js-input" type="email" required />
-                                <Label class="label" for="email">E-mail</Label>
+                        <FormField className="form-field">
+                            <Input id="email" className="input-text js-input" type="email" required />
+                                <Label className="label" for="email">E-mail</Label>
                         </FormField>
-                        <FormField class="form-field">
-                            <Input id="message" class="input-text js-input" type="text" required />
-                                <Label class="label" for="message">Message</Label>
+                        <FormField className="form-field">
+                            <Input id="message" className="input-text js-input" type="text" required />
+                                <Label className="label" for="message">Message</Label>
                         </FormField>
-                        <FormField class="form-field">
-                            <Button class="submit">
+                        <FormField className="form-field">
+                            <Button className="submit">
                                 SUBMIT 
                             </Button>
                         </FormField>

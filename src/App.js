@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/Portfolio-Website/' exact component={Home} />
+        <Route exact path='/Portfolio-Website/' component={Home} />
       </Switch>
     </Router>
   );

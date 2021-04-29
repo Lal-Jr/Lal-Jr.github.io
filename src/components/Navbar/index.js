@@ -4,6 +4,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import { NavItem, NavLogo, NavMenu, NavBar, Hamburger } from './Navbar.styles.jsx';
 
 function Navbar({ toggle }) {
+    
     const [,setClick] = useState(false);
 
     const closeMenu = () => setClick(false);
@@ -30,15 +31,12 @@ function Navbar({ toggle }) {
     return (
         <>
             <NavBar scrollNav={scrollNav}>
-                <NavLogo onClick={toggleHome}>
-                    <h1>LALJR</h1>
-                </NavLogo>
+                <NavLogo onClick={toggleHome}> LALJR </NavLogo>
                 <NavMenu>
                     <NavItem onClick={toggleHome}>
                         Home
                     </NavItem>
-                    <NavItem 
-                        activeClassName='active'
+                    <NavItem
                         to='about'
                         spy={true}
                         smooth={true}
@@ -46,10 +44,9 @@ function Navbar({ toggle }) {
                         duration={800}
                         onClick={closeMenu}
                     >
-                        About Us
+                        About
                     </NavItem>
                     <NavItem
-                        activeClassName='active'
                         to='work'
                         spy={true}
                         smooth={true}
@@ -57,10 +54,9 @@ function Navbar({ toggle }) {
                         duration={800}
                         onClick={closeMenu}
                     >
-                        My Works
+                        Works
                     </NavItem>
                     <NavItem
-                        activeClassName='active'
                         to='contact'
                         spy={true}
                         smooth={true} 
