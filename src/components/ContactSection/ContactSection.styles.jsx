@@ -17,7 +17,7 @@ export const Title = styled.h1`
     padding-bottom: 48px;
 `
 export const Content = styled.div`
-    margin: 0px 150px;
+    margin: 0px 150px 300px;
     padding: 0px 50px;
     line-height: 1.6;
     justify-content: center;
@@ -32,14 +32,14 @@ export const Form = styled.form`
 `
 
 export const FormField = styled.div.attrs({
-    class: "input-text js-input"
+    className: "input-text js-input"
 })`
     position: relative;
     margin: 32px 0;
 `
 
 export const Label = styled.label.attrs({
-    class: "label"
+    className: "label"
 })`
     position: absolute;
     left: 20px;
@@ -53,7 +53,7 @@ export const Label = styled.label.attrs({
 `
 
 export const Button = styled.button.attrs({
-    class: "submit",
+    className: "submit",
     type:"submit",
     value:"Submit"
 })`
@@ -70,7 +70,7 @@ export const Button = styled.button.attrs({
 `
 
 export const Input = styled.input.attrs({
-    class: "input-text js-input"
+    className: "input-text js-input"
 })`
     display: block;
     width: 100%;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Link from 'react-router-dom';
 
 export const CardContainer = styled.div`
     display: block;
@@ -36,3 +37,10 @@ export const CardTitle = styled.h2`
 	padding: 0;
     color: #fff;
 `;
+
+// export const Button = styled.span`
+// 	cursor: pointer;
+// 	margin: 0;
+// 	padding: 0;
+// 	color: #fff;
+// `;

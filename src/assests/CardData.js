@@ -1,39 +1,37 @@
 import portfolio from '../assests/Images/Portfolio.png'
 import todoapp from '../assests/Images/todoapp.png'
 import monsterrolodex from '../assests/Images/MonsterRolodex.png'
+import weatherapp from "../assests/Images/weatherapp.png";
+import pizzalanding from "../assests/Images/pizzalanding.png";
+import chatapp from "../assests/Images/chatapp.png";
+
 
 export const cardObjOne = {
     title: 'Portfolio',
-    img: {portfolio},
-    body: 'lorem ipsum',
+    img: `${portfolio}`,
 }
 
 export const cardObjTwo = {
-    title: 'Netflix Clone',
-    img: '',
-    body: 'lorem ipsum',
-}
+	title: "Pizza Shop",
+	img: `${pizzalanding}`,
+};
 
 export const cardObjThree = {
-    title: 'E-Commerce',
-    img: '',
-    body: 'lorem ipsum',
-}
+	title: "Chat Application",
+	img: `${chatapp}`,
+};
 
 export const cardObjFour = {
-    title: 'To-do Application',
-    img: {todoapp},
-    body: 'lorem ipsum',
-}
+	title: "To-do Application",
+	img: `${todoapp}`,
+};
 
 export const cardObjFive = {
-    title: 'Chat Application',
-    img: '',
-    body: 'lorem ipsum',
-}
+	title: "Weather Application",
+	img: `${weatherapp}`,
+};
 
 export const cardObjSix = {
 	title: "Monsters Rolodex",
-	img: {monsterrolodex},
-	body: "lorem ipsum",
+	img: `${monsterrolodex}`,
 };

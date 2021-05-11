@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState }from 'react';
 import { ContactContainer, Title, Content, Button, Label, Input, Form, FormField } from './ContactSection.styles.jsx';
 import FooterContainer from '../Footer/index.js';
 
-function ContactSection()
-{
+function ContactSection(){
+   
+    const [, setIfSubmit] = useState(true);
+
+    
     return (
         <>
             <ContactContainer id='contact'>
@@ -11,7 +14,7 @@ function ContactSection()
                     Contact
                 </Title>
                 <Content className="contact-form row">
-                    <Form>
+                    <Form onSubmit={setIfSubmit}>
                         <FormField className="form-field">
                             <Input id="name" className="input-text js-input" type="text" required /> 
                                 <Label className="label" for="name">Name</Label>
