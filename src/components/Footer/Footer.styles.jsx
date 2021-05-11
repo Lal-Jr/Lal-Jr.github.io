@@ -8,6 +8,5 @@ export const FooterContainer = styled.div`
     padding: 70px 0 50px 0;
     position: relative;
     top: 220px;
-    margin: 0;
     width: 100vw;
 `
