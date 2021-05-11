@@ -1,4 +1,5 @@
 import portfolio from '../assests/Images/Portfolio.png'
+import todoapp from '../assests/Images/todoapp.png'
 
 export const cardObjOne = {
     title: 'Portfolio',
@@ -19,8 +20,8 @@ export const cardObjThree = {
 }
 
 export const cardObjFour = {
-    title: 'Music Player',
-    img: '',
+    title: 'To-do Application',
+    img: {todoapp},
     body: 'lorem ipsum',
 }
 
