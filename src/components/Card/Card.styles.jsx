@@ -34,4 +34,5 @@ export const CardTitle = styled.h2`
 	cursor: pointer;
 	margin: 0;
 	padding: 0;
+    color: #fff;
 `;
