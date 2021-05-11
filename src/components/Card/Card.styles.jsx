@@ -18,15 +18,20 @@ export const CardContainer = styled.div`
 export const ImageContainer = styled.image`
     overflow:  hidden;
     height: 200px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 `
 
 export const CardContent = styled.div`
     margin: 1rem;
     color: #46caca;
+    text-align: center;
 `
 
 export const CardTitle = styled.h2`
-    cursor: pointer;
-`
-
-export const CardBody = styled.p``
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+`;

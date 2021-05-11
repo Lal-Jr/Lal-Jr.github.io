@@ -38,7 +38,7 @@ export const NavLogo = styled.h1`
   cursor: pointer;
   margin-left: 4rem;
   margin-top: 1.5rem;
-  font-family: 'Fredericka the Great', cursive;
+  letter-spacing: 4px;
 `
 
 export const NavItem = styled(Link)`

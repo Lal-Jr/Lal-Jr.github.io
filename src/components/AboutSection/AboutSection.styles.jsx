@@ -7,13 +7,12 @@ export const AboutContainer = styled.div`
 `
 
 export const Title = styled.h1`
-    text-align: center;
-    padding: 100px 0px 20px 0px;
-    font-size: 40px;
-    color: #46caca;
-    font-weight: bold;
-    text-transform: uppercase;
-`
+	text-align: center;
+	padding: 100px 0px 20px 0px;
+	font-size: 40px;
+	color: #46caca;
+	text-transform: uppercase;
+`;
 export const SubText = styled.p`
     margin: 0px 150px;
     padding: 0px 50px;

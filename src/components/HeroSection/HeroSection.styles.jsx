@@ -27,7 +27,7 @@ export const HeroTextWrapper = styled.div`
 export const Title = styled.h1`
     color: #fff;
     font-size: 48px;
-    font-family: 'Spartan', sans-serif;
+    font-family: ;
     font-weight: 900px;
     letter-spacing: 1.5px;
     padding: 5px 20px 5px 20px;

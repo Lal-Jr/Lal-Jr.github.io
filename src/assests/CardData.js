@@ -1,5 +1,6 @@
 import portfolio from '../assests/Images/Portfolio.png'
 import todoapp from '../assests/Images/todoapp.png'
+import monsterrolodex from '../assests/Images/MonsterRolodex.png'
 
 export const cardObjOne = {
     title: 'Portfolio',
@@ -32,7 +33,7 @@ export const cardObjFive = {
 }
 
 export const cardObjSix = {
-    title: 'Monsters Rolodex',
-    img: '',
-    body: 'lorem ipsum',
-}
+	title: "Monsters Rolodex",
+	img: {monsterrolodex},
+	body: "lorem ipsum",
+};

@@ -1,16 +1,16 @@
 import React from 'react';
-import { CardContainer, ImageContainer, CardContent, CardTitle, CardBody } from './Card.styles.jsx';
+import { CardContainer, ImageContainer, CardContent, CardTitle} from './Card.styles.jsx';
+import portfolio from "../../assests/Images/Portfolio.png";
 
-function Card({title,img,body}) {
+function Card({title,img}) {
     return (
         <>
             <CardContainer>
                 <ImageContainer>
-                    <img src={img} alt='' />
+                    <img src={portfolio} alt='img' />
                 </ImageContainer>
                 <CardContent>
                     <CardTitle> {title} </CardTitle>
-                    <CardBody> {body} </CardBody>
                 </CardContent>
             </CardContainer>
         </>

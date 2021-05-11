@@ -31,15 +31,6 @@ export const Form = styled.form`
     margin: 0px 500px;
 `
 
-export const Para = styled.p`
-    position: relative;
-    text-align: center;
-    font-family: Lusitana, serif;
-    font-size: 16px;
-    line-height: 21px;
-    top: 2rem;
-    width: 100%;
-`
 export const FormField = styled.div.attrs({
     class: "input-text js-input"
 })`
@@ -53,7 +44,6 @@ export const Label = styled.label.attrs({
     position: absolute;
     left: 20px;
     bottom: 11px;
-    font-family: Lusitana, serif;
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
@@ -70,7 +60,6 @@ export const Button = styled.button.attrs({
     display: inline-block;
     background-color: #000;
     color: #fff;
-    font-family: Raleway, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
@@ -88,7 +77,6 @@ export const Input = styled.input.attrs({
     height: 46px;
     border-width: 0 0 2px 0;
     border-color: #fff;
-    font-family: Spartan, sans-serif;
     font-size: 20px;
     line-height: 26px;
     font-weight: 400;

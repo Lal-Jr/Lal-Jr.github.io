@@ -1,14 +1,14 @@
 import React from 'react';
-import { FooterContainer } from './Footer.styles.jsx';
+import { FooterContainer, Para } from './Footer.styles.jsx';
 
 function Footer() {
     return (
-        <>
-            <FooterContainer>
-
-            </FooterContainer>
-        </>
-    )
+		<>
+			<FooterContainer>
+				<Para>HARISH LAL © 2021</Para>
+			</FooterContainer>
+		</>
+	);
 }
 
 export default Footer;
