@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
     height: 150px;
     padding: 70px 0 50px 0;
     position: relative;
-    top: 300px;
+    bottom: -535px;
     width: 100vw;
 `
 
