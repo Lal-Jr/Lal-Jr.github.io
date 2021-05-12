@@ -24,7 +24,7 @@ export const HeroTextWrapper = styled.div`
     }
 `
 
-export const Title = styled.h1`
+export const Title = styled.div`
     color: #fff;
     font-size: 48px;
     font-family: ;
@@ -44,7 +44,7 @@ export const ButtonWrapper = styled.div`
 
 export const Highlight = styled(LinkS)`
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-width: 1px;
     display: inline-block;
     padding: 0px 10px;
 
@@ -119,12 +119,13 @@ export const FaL = styled(FaLinkedin)`
 `
 
 export const Span = styled.span`
+    display: inline-flex;
     font-size: 20px;
     font-weight: bold;
-    // line-height: 60px;
     margin-left: 10px;
-    display: inline-flex;
-    align-content: center;
+    padding-top: -10px;
+    justify-content: center;
+    text-align: center;
 `
 
 export const Arrow = styled(AiOutlineArrowRight)`

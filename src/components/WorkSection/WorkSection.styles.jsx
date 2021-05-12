@@ -20,6 +20,10 @@ export const Content = styled.div`
     padding: 0px;
     display: flex;
     justify-content: center;
+
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
 `
 
 export const Divider = styled.div`

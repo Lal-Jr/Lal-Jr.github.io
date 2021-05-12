@@ -4,11 +4,11 @@ export const FooterContainer = styled.div`
     background: rgba(30,30,30,0.25);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    height: 14vh;
+    height: 10vh;
     position: sticky;
     bottom: 0;
     width: 100vw;
-    padding-top: 6vh;
+    padding-top: 3.5vh;
     border-top: 1px solid #46caca;
 `
 
