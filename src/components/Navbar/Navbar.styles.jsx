@@ -6,7 +6,7 @@ export const NavBar = styled.div`
   background: rgba(30,30,30,0.25);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  height: 80px;
+  height: 10vh;
   opacity: ${({ scrollNav }) => (scrollNav ? '1' : '0')};
   display: flex;
   position: fixed;
