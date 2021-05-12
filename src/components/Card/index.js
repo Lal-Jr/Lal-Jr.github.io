@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardContainer, ImageContainer, CardContent, CardTitle, Button} from './Card.styles.jsx';
+import { CardContainer, ImageContainer, CardContent, CardTitle} from './Card.styles.jsx';
 
 const Card = ({ title, img, link }) => {
 	return (
@@ -10,7 +10,6 @@ const Card = ({ title, img, link }) => {
 				</ImageContainer>
 				<CardContent>
 					<CardTitle> {title} </CardTitle>
-					{/* <Button href="https://lal-jr.github.io/pizza-landing"> View App</Button> */}
 				</CardContent>
 			</CardContainer>
 		</>
