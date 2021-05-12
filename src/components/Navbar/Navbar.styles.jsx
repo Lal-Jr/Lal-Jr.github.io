@@ -7,13 +7,13 @@ export const NavBar = styled.div`
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   height: 10vh;
-  opacity: ${({ scrollNav }) => (scrollNav ? '1' : '0')};
+  visibility: ${({ scrollNav }) => (scrollNav ? 'visible' : 'hidden')};
   display: flex;
   position: fixed;
   margin: 0;
   padding: 0;
   width: 100vw;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 `
 
 export const Hamburger = styled.div`
