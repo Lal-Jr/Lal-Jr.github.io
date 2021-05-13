@@ -79,14 +79,18 @@ export const Highlight = styled(LinkS)`
 `
 
 export const SocialMediaIconWrapper = styled.div`
-    margin: 0;
-    padding: 0;
-    box-sozing: border-box;
-    font-family: 'Poppins', sans-serif;
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
-`
+	margin: 0;
+	padding: 0;
+	box-sozing: border-box;
+	font-family: "Poppins", sans-serif;
+	position: absolute;
+	right: 2rem;
+	bottom: 2rem;
+
+	@media (max-width: 560px) {
+		bottom: 0.5rem;
+	}
+`;
 
 export const Icon = styled.div`
 	display: inline-flex;
@@ -128,12 +132,6 @@ export const SocialButton = styled.div`
 		@media (max-width: 768px) {
 			width: 60px;
 		}
-	}
-
-	@media (max-width: 560px) {
-		right: 1rem;
-        left: 1rem;
-		bottom: 1rem;
 	}
 
 	@media (max-width: 320px) {

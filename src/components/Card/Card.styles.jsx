@@ -1,40 +1,30 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-	display: relative;
+	display: flex;
 	transition: all 0.3s ease-in-out;
 	background: rgba(30, 30, 30, 0.25);
-	// backdrop-filter: blur(20px);
-	// -webkit-backdrop-filter: blur(20px);
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	margin: 0 10px;
+	height: auto;
+	width: auto;
 
 	&:hover {
 		transform: scale(1.02);
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 1450px) {
 		margin: 1vh 0;
 	}
 `;
 
-export const ImageContainer = styled.image`
+export const ImageContainer = styled.div`
 	overflow: hidden;
-	height: 200px;
-	width: 400px;
+	height: 25vh;
+	width: 50vh;
 	display: flex;
 	justify-content: center;
 	padding: 1.5vh;
-
-	@media (max-width: 768px) {
-		height: 20vh;
-		width: 40vh;
-	}
-
-	@media (max-width: 375px) {
-		height: 10vh;
-		width: 20vh;
-	}
 `;
 
 export const CardContent = styled.div`
