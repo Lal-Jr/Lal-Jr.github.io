@@ -5,16 +5,12 @@ export const CardContainer = styled.div`
 	transition: all 0.3s ease-in-out;
 	background: rgba(30, 30, 30, 0.25);
 	border: 1px solid rgba(255, 255, 255, 0.18);
-	margin: 0 10px;
-	height: auto;
-	width: auto;
+	margin: 1vh;
+	height: 38vh;
+	width: 53vh;
 
 	&:hover {
 		transform: scale(1.02);
-	}
-
-	@media (max-width: 1450px) {
-		margin: 1vh 0;
 	}
 `;
 

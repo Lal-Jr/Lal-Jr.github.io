@@ -3,7 +3,6 @@ import {
 	WorkContainer,
 	Title,
 	Content,
-	Divider,
 	ContentWrapper,
 } from "./WorkSection.styles.jsx";
 import Card from '../Card/index.js';
@@ -21,7 +20,6 @@ function WorkSection()
 						<Card {...cardObjTwo} />
 						<Card {...cardObjThree} />
 					</Content>
-					<Divider />
 					<Content>
 						<Card {...cardObjFour} />
 						<Card {...cardObjFive} />

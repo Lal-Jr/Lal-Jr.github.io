@@ -7,7 +7,7 @@ export const WorkContainer = styled.div`
     padding: 0 10vw;
 
     @media (max-width:768px) {
-        height: 250vh;
+        height: 260vh;
     }
 `
 
@@ -20,24 +20,35 @@ export const Title = styled.h1`
     text-transform: uppercase;
 `
 export const Content = styled.div`
-    margin: 0px;
-    padding: 0px;
     display: flex;
-    justify-content: center;
+    justify-items: center;
+
+    @media (max-width: 1150px) {
+		flex-direction: column;
+	}
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding-left: 3vh;
+	}
 
 `
 
 export const Divider = styled.div`
 	height: 1.5vh;
 	display: inline-block;
-
-	@media (max-width: 768px) {
-		display: none;
-	}
 `;
 
 export const ContentWrapper = styled.div`
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
+    flex-direction: column;
+    
+    @media (max-width: 1150px) {
+		flex-direction: row;
+	}
+
+    @media (max-width: 768px) {
+		flex-direction: column;
+	}
 `;
