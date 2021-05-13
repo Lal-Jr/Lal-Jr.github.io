@@ -200,5 +200,7 @@ export const Resume = styled(LinkR)`
 	@media (max-width: 560px) {
 		padding: 3px 8px;
 		font-size: 12px;
+		right: 1rem;
+		top: 1rem;
 	}
 `;
