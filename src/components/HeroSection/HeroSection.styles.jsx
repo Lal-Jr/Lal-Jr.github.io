@@ -35,22 +35,29 @@ export const Title = styled.h1`
 	display: flex;
 	justify-content: center;
 
+	@media (max-width: 864px) {
+		font-size: 36px;
+	}
+
 	@media (max-width: 768px) {
 		font-size: 26px;
 	}
 
-    @media (max-width: 425px) {
+	@media (max-width: 555px) {
 		font-size: 18px;
-    }
+	}
 
-	@media (max-width: 375px) {
+	@media (max-width: 388px) {
 		font-size: 16px;
-    }
+	}
 
-    @media (max-width: 320px) {
+	@media (max-width: 355px) {
 		font-size: 12px;
-    }
-    
+	}
+
+	@media (max-width: 290px) {
+		font-size: 10px;
+	}
 `;
 
 export const ButtonWrapper = styled.div`
@@ -79,48 +86,60 @@ export const SocialMediaIconWrapper = styled.div`
     position: absolute;
     right: 2rem;
     bottom: 2rem;
-    // display: flex;
-    // flex-direction: column;
 `
 
 export const Icon = styled.div`
-    display: inline-flex;
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    justify-content: center;
-    align-items: center;
-`
+	display: inline-flex;
+	height: 60px;
+	width: 60px;
+	border-radius: 50px;
+	box-sizing: border-box;
+	line-height: 60px;
+	justify-content: center;
+	align-items: center;
+
+	@media (max-width: 320px) {
+		width: 30px;
+		height: 30px;
+	}
+`;
 
 export const SocialButton = styled.div`
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    float: left;
-    margin: 5px;
-    background: #fff;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease-out;
-    overflow: hidden;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	float: left;
+	margin: 5px;
+	background: #fff;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-out;
+	overflow: hidden;
 
-    &:hover{
-        width: 200px;
-        ${Icon}{
-            color: #fff;
-            background: #1b2735;
-            transition: all 0.2s ease-in-out;
-        }
-    }
-`
+	&:hover {
+		width: 200px;
+		${Icon} {
+			color: #fff;
+			background: #1b2735;
+			transition: all 0.2s ease-in-out;
+		}
+        
+		@media (max-width: 768px) {
+			width: 60px;
+		}
+	}
+
+	@media (max-width: 320px) {
+		width: 30px;
+		height: 30px;
+	}
+`;
 
 export const FaI = styled(FaInstagram)`
-    font-size: 25px;
-    line-height: 60px;
-`
+	font-size: 25px;
+	line-height: 60px;
+`;
 export const FaT = styled(FaTwitter)`
     font-size: 25px;
     line-height: 60px;
@@ -149,32 +168,37 @@ export const Arrow = styled(AiOutlineArrowRight)`
 `
 
 export const Resume = styled(LinkR)`
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    background: transparent;
-    white-space: nowrap;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    border: 2px solid #fff;
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    font-weight: bold;
+	position: absolute;
+	right: 2rem;
+	top: 2rem;
+	background: transparent;
+	white-space: nowrap;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	border: 2px solid #fff;
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s ease-in-out;
+	font-weight: bold;
 
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #46caca;
-        color: #fff;
-        border: 2px solid #46caca;
-        ${Arrow}{
-            transform: translateX(5px);
-            transition: all 0.3s ease-in-out;
-        }
-    }
+	&:hover {
+		transition: all 0.2s ease-in-out;
+		background: #46caca;
+		color: #fff;
+		border: 2px solid #46caca;
+		${Arrow} {
+			transform: translateX(5px);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	@media (max-width: 560px) {
+		padding: 3px 8px;
+		font-size: 12px;
+	}
 `;
