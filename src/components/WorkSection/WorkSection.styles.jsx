@@ -5,6 +5,10 @@ export const WorkContainer = styled.div`
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
     padding: 0 10vw;
+
+    @media (max-width:768px) {
+        height: 250vh;
+    }
 `
 
 export const Title = styled.h1`
@@ -29,4 +33,8 @@ export const Content = styled.div`
 export const Divider = styled.div`
     height: 1.5vh;
     display:inline-block;
+
+    @media (max-width:768px) {
+        display: none;
+    }
 `

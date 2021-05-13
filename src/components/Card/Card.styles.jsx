@@ -12,6 +12,10 @@ export const CardContainer = styled.div`
     &:hover{
     transform: scale(1.02);
     }
+
+    @media (max-width:768px) {
+        margin: 10px 0;
+    }
 `
 
 export const ImageContainer = styled.image`
