@@ -1,27 +1,36 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-    display: relative;
-    transition: all .3s ease-in-out;
-    background: rgba(30,30,30,0.25);
-    // backdrop-filter: blur(20px);
-    // -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255,255,255,0.18);
-    margin: 0 10px;
+	display: relative;
+	transition: all 0.3s ease-in-out;
+	background: rgba(30, 30, 30, 0.25);
+	// backdrop-filter: blur(20px);
+	// -webkit-backdrop-filter: blur(20px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	margin: 0 10px;
 
-    &:hover{
-    transform: scale(1.02);
-    }
-`
+	&:hover {
+		transform: scale(1.02);
+	}
+
+	@media (max-width: 768px) {
+		margin: 1vh 0;
+	}
+`;
 
 export const ImageContainer = styled.image`
-    overflow:  hidden;
-    height: 200px;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    padding: 1.5vh 1.5vh 0vh 1.5vh;
-`
+	overflow: hidden;
+	height: 200px;
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	padding: 1.5vh;
+
+	@media (max-width: 768px) {
+		height: 20vh;
+        width: 40vh;
+	}
+`;
 
 export const CardContent = styled.div`
     color: #46caca;

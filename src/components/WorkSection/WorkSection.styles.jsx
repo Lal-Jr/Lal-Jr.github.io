@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const WorkContainer = styled.div`
-    height: 100vh;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    overflow: hidden;
-    padding: 0 10vw;
-`
+	height: 100vh;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	overflow: hidden;
+	padding: 0 10vw;
+
+	@media (max-width: 768px) {
+		height: 250vh;
+	}
+`;
 
 export const Title = styled.h1`
     text-align: center;
@@ -27,6 +31,10 @@ export const Content = styled.div`
 `
 
 export const Divider = styled.div`
-    height: 1.5vh;
-    display:inline-block;
-`
+	height: 1.5vh;
+	display: inline-block;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+`;
