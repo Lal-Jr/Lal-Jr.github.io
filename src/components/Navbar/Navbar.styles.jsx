@@ -1,25 +1,24 @@
-import { Link } from 'react-scroll';
-import styled from 'styled-components';
-// import media from '../../assets/Media';
+import { Link } from "react-scroll";
+import styled from "styled-components";
 
 export const NavBar = styled.div`
-  background: rgba(30,30,30,0.25);
+  background: rgba(30, 30, 30, 0.25);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   height: 10vh;
-  visibility: ${({ scrollNav }) => (scrollNav ? 'visible' : 'hidden')};
+  visibility: ${({ scrollNav }) => (scrollNav ? "visible" : "hidden")};
   display: flex;
   position: fixed;
   margin: 0;
   padding: 0;
   width: 100vw;
   transition: all 0.1s ease-in-out;
-`
+`;
 
 export const Hamburger = styled.div`
   color: #fff;
   display: none;
-`
+`;
 
 export const NavMenu = styled.div`
   display: grid;
@@ -30,7 +29,7 @@ export const NavMenu = styled.div`
   justify-content: end;
   align-items: center;
   margin-right: 4rem;
-`
+`;
 
 export const NavLogo = styled.h1`
   display: block;
@@ -39,7 +38,7 @@ export const NavLogo = styled.h1`
   margin-left: 4rem;
   margin-top: 1.5rem;
   letter-spacing: 4px;
-`
+`;
 
 export const NavItem = styled(Link)`
   position: relative;
@@ -53,7 +52,7 @@ export const NavItem = styled(Link)`
   cursor: pointer;
   color: #fff;
 
-  &:hover{
+  &:hover {
     color: #46caca;
   }
-`
+`;
