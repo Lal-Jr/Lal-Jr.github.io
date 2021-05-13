@@ -124,10 +124,16 @@ export const SocialButton = styled.div`
 			background: #1b2735;
 			transition: all 0.2s ease-in-out;
 		}
-        
+
 		@media (max-width: 768px) {
 			width: 60px;
 		}
+	}
+
+	@media (max-width: 560px) {
+		right: 1rem;
+        left: 1rem;
+		bottom: 1rem;
 	}
 
 	@media (max-width: 320px) {
