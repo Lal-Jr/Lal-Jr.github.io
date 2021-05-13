@@ -6,14 +6,14 @@ export const NavBar = styled.div`
   background: rgba(30,30,30,0.25);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  height: 80px;
-  opacity: ${({ scrollNav }) => (scrollNav ? '1' : '0')};
+  height: 10vh;
+  visibility: ${({ scrollNav }) => (scrollNav ? 'visible' : 'hidden')};
   display: flex;
   position: fixed;
   margin: 0;
   padding: 0;
   width: 100vw;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 `
 
 export const Hamburger = styled.div`

@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 {
   "homepage": "https://lal-jr.github.io/Portfolio",
+=======
+{ 
+  "homepage":"https://Lal-Jr.github.io/",
+>>>>>>> 4b9dbae92fed7be29c38ac0deeec92fb90aa23c2
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,

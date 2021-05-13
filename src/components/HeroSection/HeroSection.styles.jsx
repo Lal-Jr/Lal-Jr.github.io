@@ -119,12 +119,13 @@ export const FaL = styled(FaLinkedin)`
 `
 
 export const Span = styled.span`
+    display: inline-flex;
     font-size: 20px;
     font-weight: bold;
-    // line-height: 60px;
     margin-left: 10px;
-    display: inline-flex;
-    align-content: center;
+    padding-top: -10px;
+    justify-content: center;
+    text-align: center;
 `
 
 export const Arrow = styled(AiOutlineArrowRight)`
