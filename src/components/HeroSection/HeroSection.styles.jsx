@@ -25,17 +25,33 @@ export const HeroTextWrapper = styled.div`
 `
 
 export const Title = styled.h1`
-    color: #fff;
-    font-size: 48px;
-    font-family: ;
-    font-weight: 900px;
-    letter-spacing: 1.5px;
-    padding: 5px 20px 5px 20px;
-    align-text: center;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-`
+	color: #fff;
+	font-size: 48px;
+	font-weight: 900px;
+	letter-spacing: 1.5px;
+	padding: 5px 20px 5px 20px;
+	align-text: center;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+
+	@media (max-width: 768px) {
+		font-size: 26px;
+	}
+
+    @media (max-width: 425px) {
+		font-size: 18px;
+    }
+
+	@media (max-width: 375px) {
+		font-size: 16px;
+    }
+
+    @media (max-width: 320px) {
+		font-size: 12px;
+    }
+    
+`;
 
 export const ButtonWrapper = styled.div`
     display: flex;
