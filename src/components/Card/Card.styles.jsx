@@ -28,7 +28,12 @@ export const ImageContainer = styled.image`
 
 	@media (max-width: 768px) {
 		height: 20vh;
-        width: 40vh;
+		width: 40vh;
+	}
+
+	@media (max-width: 375px) {
+		height: 10vh;
+		width: 20vh;
 	}
 `;
 

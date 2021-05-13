@@ -7,15 +7,13 @@ export const ContactContainer = styled.div`
 `
 
 export const Title = styled.h1`
-    text-align: center;
-    padding: 100px 0px 20px 0px;
-    font-size: 40px;
-    color: #46caca;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 48px;
-    padding-bottom: 48px;
-`
+	text-align: center;
+	padding: 12vh 0px 5vh 0px;
+	font-size: 40px;
+	color: #46caca;
+	font-weight: bold;
+	text-transform: uppercase;
+`;
 export const Content = styled.div`
     margin: 0px 150px 300px;
     padding: 0px 50px;
