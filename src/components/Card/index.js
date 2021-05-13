@@ -1,5 +1,13 @@
-import React from 'react';
-import { CardContainer, ImageContainer, CardContent, CardTitle, Button, ContentWrapper, ButtonWrapper } from './Card.styles.jsx';
+import React from "react";
+import {
+	CardContainer,
+	ImageContainer,
+	CardContent,
+	CardTitle,
+	Button,
+	ContentWrapper,
+	ButtonWrapper,
+} from "./Card.styles.jsx";
 
 const Card = ({ title, img }) => {
 	return (

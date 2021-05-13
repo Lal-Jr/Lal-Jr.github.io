@@ -25,16 +25,19 @@ export const Content = styled.div`
     display: flex;
     justify-content: center;
 
-    @media (max-width:768px) {
-        flex-direction: column;
-    }
 `
 
 export const Divider = styled.div`
-    height: 1.5vh;
-    display:inline-block;
+	height: 1.5vh;
+	display: inline-block;
 
-    @media (max-width:768px) {
-        display: none;
-    }
-`
+	@media (max-width: 768px) {
+		display: none;
+	}
+`;
+
+export const ContentWrapper = styled.div`
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+`;
