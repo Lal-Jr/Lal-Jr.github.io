@@ -6,8 +6,12 @@ export const WorkContainer = styled.div`
   overflow: hidden;
   padding: 0 10vw;
 
+  @media (max-width: 1150px) {
+    height: 150vh;
+  }
+
   @media (max-width: 768px) {
-    height: 260vh;
+    height: 200vh;
   }
 `;
 
@@ -18,6 +22,10 @@ export const Title = styled.h1`
   color: #46caca;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
 `;
 export const Content = styled.div`
   display: flex;
@@ -29,7 +37,7 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding-left: 3vh;
+    padding-left: 2.5vh;
   }
 `;
 
