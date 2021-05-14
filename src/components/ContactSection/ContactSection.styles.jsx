@@ -63,6 +63,8 @@ export const Label = styled.label.attrs({
 
 	@media (max-width: 425px) {
 		font-size: 9px;
+		left: 2px;
+    	bottom: 2px;
 	}
 `;
 
