@@ -4,6 +4,14 @@ export const AboutContainer = styled.div`
   height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
+
+  @media (max-width: 1150px) {
+    height: 110vh;
+  }
+
+  @media (max-width: 768px) {
+    height: 130vh;
+  }
 `;
 
 export const Title = styled.h1`
@@ -14,8 +22,7 @@ export const Title = styled.h1`
   text-transform: uppercase;
 `;
 export const SubText = styled.p`
-  margin: 0px 150px;
-  padding: 0px 50px;
+  margin: 0px 8vw;
   line-height: 1.6;
   justify-content: center;
   align-items: start;

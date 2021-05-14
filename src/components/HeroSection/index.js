@@ -65,32 +65,32 @@ function HeroSection() {
             </ButtonWrapper>
             <SocialMediaIconWrapper>
               <SocialButton>
-                <Icon>
-                  {" "}
-                  <FaI />{" "}
-                </Icon>
-                <Span>Instagram</Span>
+                <Span>
+                  <Icon>
+                    <FaI />
+                  </Icon>
+                </Span>
               </SocialButton>
               <SocialButton>
-                <Icon>
-                  {" "}
-                  <FaT />{" "}
-                </Icon>
-                <Span>Twitter</Span>
+                <Span>
+                  <Icon>
+                    <FaL />
+                  </Icon>
+                </Span>
               </SocialButton>
               <SocialButton>
-                <Icon>
-                  {" "}
-                  <FaG />{" "}
-                </Icon>
-                <Span>Github</Span>
+                <Span>
+                  <Icon>
+                    <FaT />
+                  </Icon>
+                </Span>
               </SocialButton>
               <SocialButton>
-                <Icon>
-                  {" "}
-                  <FaL />{" "}
-                </Icon>
-                <Span>Linkedin</Span>
+                <Span>
+                  <Icon>
+                    <FaG />
+                  </Icon>
+                </Span>
               </SocialButton>
             </SocialMediaIconWrapper>
           </HeroTextWrapper>

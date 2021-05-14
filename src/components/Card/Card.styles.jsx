@@ -29,7 +29,7 @@ export const ImageContainer = styled.div`
 
   @media (max-width: 768px) {
     height: 18vh;
-    width: 35vw;
+    width: 33vw;
   }
 `;
 
