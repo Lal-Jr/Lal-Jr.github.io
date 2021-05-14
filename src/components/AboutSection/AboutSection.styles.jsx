@@ -1,17 +1,33 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  height: 100vh;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
+	height: 100vh;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	overflow: hidden;
 
-  @media (max-width: 1150px) {
-    height: 110vh;
-  }
+	@media (max-width: 864px) {
+		height: 110vh;
+	}
 
-  @media (max-width: 768px) {
-    height: 130vh;
-  }
+	@media (max-width: 768px) {
+		height: 120vh;
+	}
+
+	@media (max-width: 555px) {
+		height: 130vh;
+	}
+
+	@media (max-width: 388px) {
+		height: 160vh;
+	}
+
+	@media (max-width: 355px) {
+		height: 180vh;
+	}
+
+	@media (max-width: 290px) {
+		height: 210vh;
+	}
 `;
 
 export const Title = styled.h1`

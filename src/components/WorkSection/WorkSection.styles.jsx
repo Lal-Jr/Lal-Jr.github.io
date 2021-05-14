@@ -37,7 +37,7 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding-left: 2.5vh;
+    padding-left: 6vh;
   }
 `;
 

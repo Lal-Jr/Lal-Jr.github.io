@@ -15,7 +15,7 @@ export const CardContainer = styled.div`
 
   @media (max-width: 768px) {
     height: 27vh;
-    width: 38vw;
+    width: 54vw;
   }
 `;
 
@@ -26,10 +26,11 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 1.5vh;
+  margin-left: 1vw;
 
   @media (max-width: 768px) {
     height: 18vh;
-    width: 33vw;
+    width: 46vw;
   }
 `;
 
