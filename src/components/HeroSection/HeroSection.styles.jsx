@@ -155,6 +155,23 @@ export const SocialMediaIconWrapper = styled.ul`
 	margin: 0;
 	padding: 0;
 	display: flex;
+
+	@media (max-width: 768px) {
+		bottom: 1rem;
+		right: 1rem;
+	}
+
+	@media (max-width: 425px) {
+		right: 4rem;
+	}
+
+	@media (max-width: 400px) {
+		right: 2.5rem;
+	}
+
+	@media (max-width: 320px) {
+		right: 1.25rem;
+	}
 `;
 
 export const SocialButton = styled.li`
