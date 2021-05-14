@@ -30,7 +30,15 @@ export const Content = styled.div`
 `;
 
 export const Form = styled.form`
-	margin: 0px 500px;
+	margin: 0px 25vw;
+
+	@media (max-width: 1100px) {
+		margin: 0px 15vw;
+	}
+
+	@media (max-width: 425px) {
+		margin: 0px 5vw;
+	}
 `;
 
 export const FormField = styled.div.attrs({
@@ -44,14 +52,18 @@ export const Label = styled.label.attrs({
 	className: "label",
 })`
     position: absolute;
-    left: 20px;
-    bottom: 11px;
+    left: 10px;
+    bottom: 10px;
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
     color: #46caca;
     cursor: text;
     transform .2s ease -in -out;
+
+	@media (max-width: 425px) {
+		font-size: 9px;
+	}
 `;
 
 export const Button = styled.button.attrs({
@@ -66,9 +78,13 @@ export const Button = styled.button.attrs({
 	letter-spacing: 2px;
 	font-size: 16px;
 	line-height: 24px;
-	padding: 8px 16px;
+	padding: 0.5vw 1.2vw;
 	border: none;
 	cursor: pointer;
+
+	@media (max-width: 425px) {
+		font-size: 8px;
+	}
 `;
 
 export const Input = styled.input.attrs({
