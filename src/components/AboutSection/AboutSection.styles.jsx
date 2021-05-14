@@ -31,16 +31,21 @@ export const AboutContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  text-align: center;
-  padding: 100px 0px 20px 0px;
-  font-size: 40px;
-  color: #46caca;
-  text-transform: uppercase;
+	text-align: center;
+	padding: 12vh 0px 1vh 0px;
+	font-size: 40px;
+	color: #46caca;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	@media (max-width: 768px) {
+		font-size: 26px;
+	}
 `;
 export const SubText = styled.p`
-  margin: 0px 8vw;
-  line-height: 1.6;
-  justify-content: center;
-  align-items: start;
-  color: #fff;
+	margin: 0px 8vw;
+	line-height: 1.6;
+	justify-content: center;
+	align-items: start;
+	color: #fff;
 `;
