@@ -49,3 +49,5 @@ export const SubText = styled.p`
 	align-items: start;
 	color: #fff;
 `;
+
+export const Icon = styled.span``;
