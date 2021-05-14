@@ -40,8 +40,8 @@ export const ImageContainer = styled.div`
 `;
 
 export const CardContent = styled.div`
-  color: #46caca;
-  text-align: center;
+	color: #46caca;
+	text-align: center;
 `;
 
 export const CardTitle = styled.h2`
@@ -61,6 +61,8 @@ export const CardTitle = styled.h2`
 
 export const Button = styled.a`
 	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
 
 	@media (max-width: 768px) {
 		font-size: 16px;
@@ -80,6 +82,6 @@ export const ContentWrapper = styled.div`
 `;
 
 export const ButtonWrapper = styled.span`
-  display: flex;
-  justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 `;
