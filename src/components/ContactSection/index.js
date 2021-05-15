@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   ContactContainer,
   Title,
@@ -9,58 +9,82 @@ import {
   Form,
   FormField,
 } from "./ContactSection.styles.jsx";
+import { db } from "../../assests/firebase.js";
 
-function ContactSection() {
+const ContactSection = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [loader, setLoader] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoader(true);
+
+    db.collection("contacts")
+      .add({
+        name: name,
+        email: email,
+        message: message,
+      })
+      .then(() => {
+        setLoader(false);
+        alert("Your message has been submitted");
+      })
+      .catch((error) => {
+        alert(error.message);
+        setLoader(false);
+      });
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <>
       <ContactContainer id="contact">
-        <Title>Contact Me</Title>
-        <Content className="contact-form row">
-          <Form>
-            <FormField className="form-field">
+        <Title>Contact Us</Title>
+        <Content>
+          <Form className="form" onSubmit={handleSubmit}>
+            <FormField>
               <Input
-                id="name"
-                className="input-text js-input"
-                type="text"
-                value=""
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 required
               />
-              <Label className="label" for="name">
-                Name
-              </Label>
+              <Label>Name</Label>
             </FormField>
-            <FormField className="form-field">
+            <FormField>
               <Input
-                id="email"
-                className="input-text js-input"
-                type="email"
-                value=""
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
-              <Label className="label" for="email">
-                E-mail
-              </Label>
+              <Label>Email</Label>
             </FormField>
-            <FormField className="form-field">
+            <FormField>
               <Input
-                id="message"
-                className="input-text js-input"
-                type="text"
-                value=""
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 required
               />
-              <Label className="label" for="message">
-                Message
-              </Label>
+              <Label>Message</Label>
             </FormField>
-            <FormField className="form-field">
-              <Button className="submit">SUBMIT</Button>
+            <FormField>
+              <Button
+                type="submit"
+                style={{ background: loader ? "#ccc" : "#000" }}
+              >
+                Submit
+              </Button>
             </FormField>
           </Form>
         </Content>
       </ContactContainer>
     </>
   );
-}
+};
 
 export default ContactSection;
