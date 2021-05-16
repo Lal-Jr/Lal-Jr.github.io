@@ -30,7 +30,9 @@ const ContactSection = () => {
       })
       .then(() => {
         setLoader(false);
-        alert("Your message has been submitted");
+        alert(
+          "Your message has been submitted and I will get back to you as soon as possible"
+        );
       })
       .catch((error) => {
         alert(error.message);
@@ -60,6 +62,7 @@ const ContactSection = () => {
               <Input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                type="email"
                 required
               />
               <Label>Email</Label>
@@ -68,7 +71,6 @@ const ContactSection = () => {
               <Input
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                required
               />
               <Label>Message</Label>
             </FormField>
