@@ -43,6 +43,7 @@ export const Title = styled.h1`
   }
 `;
 export const SubText = styled.p`
+  display: absolute;
   margin: 0px 8vw;
   line-height: 1.6;
   justify-content: center;
@@ -51,4 +52,6 @@ export const SubText = styled.p`
   font-family: "Poppins", sans-serif;
 `;
 
-export const Icon = styled.span``;
+export const BarWrapper = styled.div`
+  display: flex;
+`;

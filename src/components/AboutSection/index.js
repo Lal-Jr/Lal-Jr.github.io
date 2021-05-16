@@ -1,19 +1,30 @@
 import React from "react";
+import ProgressBar from "../ProgressBar/index.js";
 import {
   AboutContainer,
   Title,
   SubText,
-  //   Icon,
+  BarWrapper,
 } from "./AboutSection.styles.jsx";
+import {
+  barEight,
+  barFive,
+  barFour,
+  barOne,
+  barSeven,
+  barSix,
+  barThree,
+  barTwo,
+} from "../../assests/BarData.js";
 
-function AboutSection(icon) {
+function AboutSection() {
   return (
     <>
       <AboutContainer id="about">
         <Title>About</Title>
         <SubText>
-          Hey, I'm<big> Harish Lal</big> and I'm <big>Web Developer</big> who
-          loves to build things. I am a <big>Full-time student </big>pursuing
+          Hey, I'm <big>Harish Lal</big> and I'm <big>Web Developer</big> who
+          loves to build things. I am a <big>Full-time student</big> pursuing
           B.Tech in Electrical and Electronics Engineering (EEE) from Government
           Engineering College,Barton Hill. My Love for Web Development started
           during Pandemic and I always give 100% when I start to like anything
@@ -25,7 +36,24 @@ function AboutSection(icon) {
           developer who is trying to evolve as time goes by. These as few of the
           skills I'm good at.
         </SubText>
-        <SubText>{/* <Icon src={icon} /> */}</SubText>
+        <SubText>
+          <BarWrapper>
+            <ProgressBar {...barOne} />
+            <ProgressBar {...barTwo} />
+          </BarWrapper>
+          <BarWrapper>
+            <ProgressBar {...barThree} />
+            <ProgressBar {...barFour} />
+          </BarWrapper>
+          <BarWrapper>
+            <ProgressBar {...barFive} />
+            <ProgressBar {...barSix} />
+          </BarWrapper>
+          <BarWrapper>
+            <ProgressBar {...barSeven} />
+            <ProgressBar {...barEight} />
+          </BarWrapper>
+        </SubText>
       </AboutContainer>
     </>
   );
