@@ -99,4 +99,8 @@ export const Input = styled.input`
       transform: translateY(-24px);
     }
   }
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
 `;
