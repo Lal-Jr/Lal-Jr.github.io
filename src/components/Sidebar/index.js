@@ -22,6 +22,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           smooth={true}
           offset={0}
           duration={800}
+          onClick={toggle}
         >
           Home
         </SidebarLink>
@@ -31,6 +32,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           smooth={true}
           offset={0}
           duration={800}
+          onClick={toggle}
         >
           About
         </SidebarLink>
@@ -40,6 +42,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           smooth={true}
           offset={0}
           duration={800}
+          onClick={toggle}
         >
           Works
         </SidebarLink>
@@ -51,6 +54,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           smooth={true}
           offset={0}
           duration={800}
+          onClick={toggle}
         >
           Contact Me
         </SidebarRoute>
