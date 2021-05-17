@@ -5,6 +5,7 @@ import {
   Title,
   SubText,
   BarWrapper,
+  ContentWrapper,
 } from "./AboutSection.styles.jsx";
 import {
   barEight,
@@ -33,27 +34,24 @@ function AboutSection() {
           started doing projects. Starting of 2021, gave me few oppurtunities to
           work as a freelance developer and improve my skills and get an idea of
           what I can achieve if I work hard. Long story short I am budding
-          developer who is trying to evolve as time goes by. These as few of the
-          skills I'm good at.
+          developer who is trying to evolve as time goes by.
+          <br /> <big>These as few of the skills I'm good at.</big>
+          <br />
         </SubText>
-        <SubText>
+        <ContentWrapper>
           <BarWrapper>
             <ProgressBar {...barOne} />
             <ProgressBar {...barTwo} />
-          </BarWrapper>
-          <BarWrapper>
             <ProgressBar {...barThree} />
             <ProgressBar {...barFour} />
           </BarWrapper>
           <BarWrapper>
             <ProgressBar {...barFive} />
             <ProgressBar {...barSix} />
-          </BarWrapper>
-          <BarWrapper>
             <ProgressBar {...barSeven} />
             <ProgressBar {...barEight} />
           </BarWrapper>
-        </SubText>
+        </ContentWrapper>
       </AboutContainer>
     </>
   );

@@ -42,16 +42,25 @@ export const Title = styled.h1`
     font-size: 26px;
   }
 `;
+
 export const SubText = styled.p`
-  display: absolute;
   margin: 0px 8vw;
   line-height: 1.6;
-  justify-content: center;
-  align-items: start;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+`;
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  margin: 5vh 8vw;
+  line-height: 1.6;
+  justify-content: space-evenly;
+  align-items: center;
   color: #fff;
   font-family: "Poppins", sans-serif;
 `;
 
 export const BarWrapper = styled.div`
   display: flex;
+  flex-direction: column;
 `;
