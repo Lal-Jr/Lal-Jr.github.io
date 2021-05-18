@@ -7,6 +7,11 @@ export const Progress = styled.div`
   margin: 15px 0;
   height: 30px;
   width: 300px;
+
+  @media (max-width: 425px) {
+    height: 10px;
+    width: 100px;
+  }
 `;
 
 export const BarDone = styled.div`

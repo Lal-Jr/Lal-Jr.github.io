@@ -63,4 +63,8 @@ export const ContentWrapper = styled.div`
 export const BarWrapper = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 425px) {
+    font-size: 10px;
+  }
 `;
