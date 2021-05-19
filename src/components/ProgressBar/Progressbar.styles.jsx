@@ -6,11 +6,11 @@ export const Progress = styled.div`
   position: relative;
   margin: 15px 0;
   height: 30px;
-  width: 300px;
+  width: 350px;
 
   @media (max-width: 425px) {
-    height: 10px;
-    width: 100px;
+    height: 15px;
+    width: 200px;
   }
 `;
 
