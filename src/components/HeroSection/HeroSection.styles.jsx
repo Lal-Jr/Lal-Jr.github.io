@@ -25,20 +25,20 @@ export const HeroTextWrapper = styled.div``;
 export const Title = styled.h1`
   color: #fff;
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 1.5px;
-  padding: 5px 20px;
+  padding: 5px 10px;
   align-text: center;
   z-index: 1;
   display: flex;
   justify-content: center;
 
   @media (max-width: 1024px) {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   @media (max-width: 768px) {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   @media (max-width: 425px) {
@@ -63,7 +63,7 @@ export const Highlight = styled(LinkS)`
   }
 
   @media (max-width: 425px) {
-    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-width: 0.5px;
   }
 `;
 
@@ -77,7 +77,8 @@ export const SocialMediaIconWrapper = styled.ul`
   @media (max-width: 768px) {
     margin-inline: auto;
     bottom: 0.5rem;
-    width: min(90%, 20rem);
+    left: 50%;
+    width: 100%;
     text-align: center;
   }
 `;
@@ -133,6 +134,11 @@ export const SocialButton = styled.li`
   list-style: none;
   position: relative;
   margin: 0 10px;
+
+  @media (max-width: 768px) {
+    margin-inline: auto;
+    left: -50%;
+  }
 
   &:before {
     content: "";
