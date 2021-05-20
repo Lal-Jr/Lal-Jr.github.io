@@ -4,13 +4,13 @@ export const Progress = styled.div`
   background-color: #d8d8d8;
   border-radius: 20px;
   position: relative;
-  margin: 15px 0;
+  margin: 10px 0;
   height: 30px;
-  width: 350px;
+  width: 400px;
 
   @media (max-width: 425px) {
     height: 15px;
-    width: 200px;
+    width: 125px;
   }
 `;
 
