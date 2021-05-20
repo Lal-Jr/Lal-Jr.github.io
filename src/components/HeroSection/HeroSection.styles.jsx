@@ -43,10 +43,12 @@ export const Title = styled.h1`
 
   @media (max-width: 425px) {
     font-size: 14px;
+    font-weight: 500;
   }
 
   @media (max-width: 320px) {
     font-size: 10px;
+    font-weight: 500;
   }
 `;
 
@@ -76,9 +78,8 @@ export const SocialMediaIconWrapper = styled.ul`
 
   @media (max-width: 768px) {
     margin-inline: auto;
-    bottom: 0.5rem;
+    bottom: 1rem;
     left: 50%;
-    width: 100%;
     text-align: center;
   }
 `;

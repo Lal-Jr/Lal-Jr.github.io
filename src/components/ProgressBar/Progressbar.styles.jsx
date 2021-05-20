@@ -8,6 +8,11 @@ export const Progress = styled.div`
   height: 30px;
   width: 400px;
 
+  @media (max-width: 768px) {
+    height: 20px;
+    width: 200px;
+  }
+
   @media (max-width: 425px) {
     height: 15px;
     width: 125px;

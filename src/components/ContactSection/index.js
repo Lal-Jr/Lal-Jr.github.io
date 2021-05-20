@@ -49,7 +49,7 @@ const ContactSection = () => {
       <ContactContainer id="contact">
         <Title>Contact Us</Title>
         <Content>
-          <Form className="form" onSubmit={handleSubmit}>
+          <Form className="form" onSubmit={handleSubmit} autoComplete="off">
             <FormField>
               <Input
                 value={name}

@@ -24,12 +24,16 @@ function AboutSection() {
       <AboutContainer id="about">
         <Title>About</Title>
         <SubText>
-          Hey, I'm <big>Harish Lal</big> and I'm
-          <big> Self Taught Web Developer</big> who loves to build things that
-          inspire others. I am currently pursuing <big>B.Tech</big> in
-          Electrical and Electronics Engineering from Government Engineering
+          Hey, I'm <strong>Harish Lal</strong> and I'm
+          <strong> Self Taught Web Developer</strong> who loves to build things
+          that inspire others. I am currently pursuing <strong>B.Tech </strong>
+          in Electrical and Electronics Engineering from Government Engineering
           College, Barton Hill.
-          <br /> <big>These as few of the skills I'm good at.</big>
+          <br /> I have being practicing Web Development for past year and half
+          but my love for programming started as early as when I was a small boy
+          who just learned what a computer does. So, Yeah! we both have a long
+          history together.
+          <br /> <strong>These as few of the skills I'm good at.</strong>
         </SubText>
         <ContentWrapper>
           <BarWrapper>

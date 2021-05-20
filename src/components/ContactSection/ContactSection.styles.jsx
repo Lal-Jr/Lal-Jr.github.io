@@ -93,6 +93,24 @@ export const Input = styled.input`
   background: transparent;
   color: #fff;
 
+  // &:placeholder {
+  //   position: absolute;
+  //   left: 10px;
+  //   bottom: 10px;
+  //   font-size: 18px;
+  //   line-height: 26px;
+  //   font-weight: 400;
+  //   color: #46caca;
+  //   cursor: text;
+  //   transform .2s ease -in -out;
+
+  // @media (max-width: 425px) {
+  // 	font-size: 9px;
+  // 	left: 2px;
+  //   	bottom: 2px;
+  // }
+  // }
+
   &:focus {
     outline: none;
     + ${Label} {

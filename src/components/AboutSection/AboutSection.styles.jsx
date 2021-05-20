@@ -9,6 +9,7 @@ export const AboutContainer = styled.div`
 
 export const Title = styled.h1`
   text-align: center;
+  padding: 8vh 0 1vh 0;
   font-size: 40px;
   color: #46caca;
   font-weight: bold;
@@ -21,14 +22,23 @@ export const Title = styled.h1`
 
 export const SubText = styled.p`
   margin-inline: auto;
-  width: min(90%, 70.5rem);
+  width: min(90%, 60.5rem);
   line-height: 1.6;
   color: #fff;
   font-family: "Poppins", sans-serif;
+
+  @media (min-width: 1024px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
 `;
 
 export const ContentWrapper = styled.div`
   display: flex;
+  padding-top: 10px;
   margin-inline: auto;
   width: min(90%, 70.5rem);
   justify-content: space-around;
