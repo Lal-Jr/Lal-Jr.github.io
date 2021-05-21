@@ -77,10 +77,9 @@ export const SocialMediaIconWrapper = styled.ul`
   display: flex;
 
   @media (max-width: 768px) {
-    margin-inline: auto;
+    // margin-inline: auto;
     bottom: 1rem;
-    left: 50%;
-    text-align: center;
+    // left: 50%;
   }
 `;
 
@@ -137,8 +136,8 @@ export const SocialButton = styled.li`
   margin: 0 10px;
 
   @media (max-width: 768px) {
-    margin-inline: auto;
-    left: -50%;
+    // margin-inline: auto;
+    // left: -50%;
   }
 
   &:before {

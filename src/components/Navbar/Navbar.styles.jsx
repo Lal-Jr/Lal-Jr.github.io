@@ -9,12 +9,15 @@ export const NavBar = styled.div`
   visibility: ${({ scrollNav }) => (scrollNav ? "visible" : "hidden")};
   display: flex;
   position: fixed;
-  margin: 0;
-  padding: 0;
   width: 100vw;
   transition: all 0.1s ease-in-out;
   border-bottom: solid 0.25vh #46caca;
   overflow: hidden;
+  z-index: 998;
+
+  @media (max-width: 425px) {
+    height: 60px;
+  }
 `;
 
 export const Hamburger = styled.div`
@@ -57,7 +60,7 @@ export const NavLogo = styled.h1`
 
   @media (max-width: 768px) {
     margin: 0;
-    transform: translate(20%, 25%);
+    transform: translate(20%, 20%);
     font-size: 1.5rem;
   }
 `;

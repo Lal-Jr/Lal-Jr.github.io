@@ -14,8 +14,13 @@ export const CardContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 27vh;
-    width: 32vh;
+    height: 30vh;
+    width: max(95%, 40vh);
+  }
+
+  @media (max-width: 425px) {
+    height: 28vh;
+    width: max(90%, 38vh);
   }
 `;
 
@@ -28,7 +33,7 @@ export const ImageContainer = styled.div`
 
   @media (max-width: 768px) {
     height: 17vh;
-    width: 28vh;
+    width: 34vh;
   }
 `;
 

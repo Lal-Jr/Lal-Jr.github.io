@@ -22,13 +22,13 @@ export const Title = styled.h1`
 
 export const SubText = styled.p`
   margin-inline: auto;
-  width: min(90%, 60.5rem);
+  width: min(90%, 80.5rem);
   line-height: 1.6;
   color: #fff;
   font-family: "Poppins", sans-serif;
 
   @media (min-width: 1024px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   @media (max-width: 320px) {

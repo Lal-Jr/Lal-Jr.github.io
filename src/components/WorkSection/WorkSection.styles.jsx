@@ -5,11 +5,7 @@ export const WorkContainer = styled.div`
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
 
-  @media (max-width: 1024px) {
-    height: 150vh;
-  }
-
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
     height: 200vh;
   }
 `;
@@ -30,13 +26,13 @@ export const Content = styled.div`
   display: flex;
   justify-items: center;
   margin-inline: auto;
-  width: min(90%, 100rem);
+  width: min(90%, 80rem);
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
     flex-direction: column;
   }
 `;
@@ -51,11 +47,11 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     flex-direction: row;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
     flex-direction: column;
   }
 `;
