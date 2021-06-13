@@ -43,6 +43,10 @@ export const Load = styled.div`
   cursor: default;
   font-size: 1.25rem;
   font-weight: 700;
+
+  @media (max-width: 425px) {
+    overflow: hidden;
+  }
 `;
 
 export const Letter = styled.div`

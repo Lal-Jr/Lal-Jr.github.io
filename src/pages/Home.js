@@ -4,7 +4,7 @@ import AboutSection from "../components/AboutSection";
 import WorkSection from "../components/WorkSection";
 import ContactSection from "../components/ContactSection";
 import FooterContainer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar.components.jsx";
 import Sidebar from "../components/Sidebar";
 import Loader from "../components/Loader";
 

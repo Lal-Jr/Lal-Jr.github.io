@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: all 0.3s ease-in-out;
   background: rgba(30, 30, 30, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -56,11 +59,16 @@ export const CardTitle = styled.h2`
   }
 `;
 
-export const Button = styled.a`
+export const Button = styled.div`
   cursor: pointer;
   text-decoration: none;
   color: inherit;
-  padding: 0 2.5vh;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid #46caca;
+  }
 
   @media (max-width: 768px) {
     font-size: 16px;
@@ -69,13 +77,4 @@ export const Button = styled.a`
   @media (max-width: 425px) {
     font-size: 10px;
   }
-`;
-
-export const ContentWrapper = styled.div`
-  margin: auto;
-`;
-
-export const ButtonWrapper = styled.span`
-  display: flex;
-  justify-content: space-between;
 `;

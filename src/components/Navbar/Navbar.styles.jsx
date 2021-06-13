@@ -8,11 +8,12 @@ export const NavBar = styled.div`
   height: 80px;
   visibility: ${({ scrollNav }) => (scrollNav ? "visible" : "hidden")};
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100vw;
   transition: all 0.1s ease-in-out;
   border-bottom: solid 0.25vh #46caca;
-  overflow: hidden;
   z-index: 998;
 
   @media (max-width: 425px) {
@@ -35,27 +36,11 @@ export const Hamburger = styled.div`
   }
 `;
 
-export const NavMenu = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
-  text-align: center;
-  width: 90vw;
-  justify-content: end;
-  align-items: center;
-  margin-right: 4rem;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
 export const NavLogo = styled.h1`
   display: block;
   color: #fff;
   cursor: pointer;
   margin-left: 4rem;
-  margin-top: 1.5rem;
   letter-spacing: 4px;
 
   @media (max-width: 768px) {
@@ -65,17 +50,25 @@ export const NavLogo = styled.h1`
   }
 `;
 
-export const NavItem = styled(Link)`
-  position: relative;
+export const NavMenu = styled.div`
   display: flex;
+  margin-right: 4rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavItem = styled(Link)`
+  display: flex;
+  justify-content: center;
   align-items: center;
-  height: 80px;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-  padding: 0.5rem 1rem;
   cursor: pointer;
   color: #fff;
+  padding-inline: 15px;
 
   &:hover {
     color: #46caca;

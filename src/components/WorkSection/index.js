@@ -5,7 +5,7 @@ import {
   Content,
   ContentWrapper,
 } from "./WorkSection.styles.jsx";
-import Card from "../Card/index.js";
+import Card from "../Card/Card.components";
 import {
   cardObjOne,
   cardObjTwo,
