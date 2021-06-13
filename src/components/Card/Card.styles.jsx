@@ -47,7 +47,6 @@ export const CardContent = styled.div`
 
 export const CardTitle = styled.h2`
   margin: 1vh 0;
-  padding: 0;
   color: #fff;
 
   @media (max-width: 768px) {
@@ -61,7 +60,6 @@ export const CardTitle = styled.h2`
 
 export const Button = styled.div`
   cursor: pointer;
-  text-decoration: none;
   color: inherit;
   font-weight: bold;
   border-bottom: 1px solid transparent;
