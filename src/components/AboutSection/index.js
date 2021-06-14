@@ -1,32 +1,56 @@
 import React from "react";
-import { iconOne } from "../../assests/Icon.js";
+import ProgressBar from "../ProgressBar/index.js";
 import {
 	AboutContainer,
 	Title,
-	Icon,
-	SubTextWrapper,
+	SubText,
+	BarWrapper,
+	ContentWrapper,
 } from "./AboutSection.styles.jsx";
+import {
+	barEight,
+	barFive,
+	barFour,
+	barOne,
+	barSeven,
+	barSix,
+	barThree,
+	barTwo,
+} from "../../assests/BarData.js";
 
-function AboutSection(icon) {
+function AboutSection() {
 	return (
 		<>
 			<AboutContainer id="about">
 				<Title>About</Title>
-				<SubTextWrapper>
-					Lorem Ipsum is simply dummy text of the printing and
-					typesetting industry. Lorem Ipsum has been the industry's
-					standard dummy text ever since the 1500s, when an unknown
-					printer took a galley of type and scrambled it to make a
-					type specimen book. It has survived not only five centuries,
-					but also the leap into electronic typesetting, remaining
-					essentially unchanged. It was popularised in the 1960s with
-					the release of Letraset sheets containing Lorem Ipsum
-					passages, and more recently with desktop publishing software
-					like Aldus PageMaker including versions of Lorem Ipsum.
-				</SubTextWrapper>
-				<SubTextWrapper>
-					<Icon {...iconOne} />
-				</SubTextWrapper>
+				<SubText>
+					Hey, I'm <strong>Harish Lal</strong> and I'm
+					<strong> Self Taught Web Developer</strong> who loves to
+					build things that inspire others. I am currently pursuing{" "}
+					<strong>B.Tech </strong>
+					in Electrical and Electronics Engineering from Government
+					Engineering College, Barton Hill.
+					<br /> I have being practicing Web Development for past year
+					and half but my love for programming started as early as
+					when I was a small boy who just learned what a computer
+					does. So, Yeah! we both have a long history together.
+					<br />{" "}
+					<strong>These as few of the skills I'm good at.</strong>
+				</SubText>
+				<ContentWrapper>
+					<BarWrapper>
+						<ProgressBar {...barOne} />
+						<ProgressBar {...barTwo} />
+						<ProgressBar {...barThree} />
+						<ProgressBar {...barFour} />
+					</BarWrapper>
+					<BarWrapper>
+						<ProgressBar {...barFive} />
+						<ProgressBar {...barSix} />
+						<ProgressBar {...barSeven} />
+						<ProgressBar {...barEight} />
+					</BarWrapper>
+				</ContentWrapper>
 			</AboutContainer>
 		</>
 	);
