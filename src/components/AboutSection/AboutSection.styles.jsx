@@ -42,7 +42,7 @@ export const Title = styled.h1`
 		font-size: 26px;
 	}
 `;
-export const SubText = styled.p`
+export const SubTextWrapper = styled.p`
 	margin: 0px 8vw;
 	line-height: 1.6;
 	justify-content: center;
@@ -50,4 +50,4 @@ export const SubText = styled.p`
 	color: #fff;
 `;
 
-export const Icon = styled.span``;
+export const Icon = styled.image``;
