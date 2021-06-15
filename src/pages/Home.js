@@ -9,37 +9,37 @@ import Sidebar from "../components/Sidebar";
 import Loader from "../components/Loader";
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
+	const [isLoading, setIsLoading] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+	const toggle = () => {
+		setIsOpen(!isOpen);
+	};
 
-  useEffect(() => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
-  }, []);
+	useEffect(() => {
+		setIsLoading(true);
+		setTimeout(() => {
+			setIsLoading(false);
+		}, 4000);
+	}, []);
 
-  return (
-    <>
-      {isLoading ? (
-        <Loader isLoading={isLoading} />
-      ) : (
-        <>
-          <Navbar toggle={toggle} />
-          <Sidebar isOpen={isOpen} toggle={toggle} />
-          <HeroSection />
-          <AboutSection />
-          <WorkSection />
-          <ContactSection />
-          <FooterContainer />
-        </>
-      )}
-    </>
-  );
+	return (
+		<>
+			{isLoading ? (
+				<Loader isLoading={isLoading} />
+			) : (
+				<>
+					<Navbar toggle={toggle} />
+					<Sidebar isOpen={isOpen} toggle={toggle} />
+					<HeroSection />
+					<AboutSection />
+					{/* <WorkSection /> */}
+					<ContactSection />
+					<FooterContainer />
+				</>
+			)}
+		</>
+	);
 };
 
 export default Home;
