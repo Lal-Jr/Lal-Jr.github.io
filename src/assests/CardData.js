@@ -3,7 +3,7 @@ import todoapp from "../assests/Images/todoapp.png";
 import monsterrolodex from "../assests/Images/MonsterRolodex.png";
 import weatherapp from "../assests/Images/weatherapp.png";
 import pizzalanding from "../assests/Images/pizzalanding.png";
-import chatapp from "../assests/Images/chatapp.png";
+import pomodoro from "../assests/Images/pomodoro.png";
 
 export const cardObjOne = {
 	title: "Portfolio",
@@ -20,10 +20,10 @@ export const cardObjTwo = {
 };
 
 export const cardObjThree = {
-	title: "Chat Application",
-	img: `${chatapp}`,
-	liveURL: "https://github.com/Lal-Jr/superchat",
-	sourceURL: "https://github.com/Lal-Jr/superchat",
+	title: "Pomodoro Timer",
+	img: `${pomodoro}`,
+	liveURL: "https://lal-jr.github.io/Pomodoro-Timer/",
+	sourceURL: "https://github.com/Lal-Jr/Pomodoro-Timer",
 };
 
 export const cardObjFour = {
