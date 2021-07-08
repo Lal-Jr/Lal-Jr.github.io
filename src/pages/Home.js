@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
-// import WorkSection from "../components/WorkSection";
+import WorkSection from "../components/WorkSection";
 import ContactSection from "../components/ContactSection";
 import FooterContainer from "../components/Footer";
 import Navbar from "../components/Navbar/Navbar.components.jsx";
@@ -20,7 +20,7 @@ const Home = () => {
 		setIsLoading(true);
 		setTimeout(() => {
 			setIsLoading(false);
-		}, 4000);
+		}, 2000);
 	}, []);
 
 	return (
@@ -33,7 +33,7 @@ const Home = () => {
 					<Sidebar isOpen={isOpen} toggle={toggle} />
 					<HeroSection />
 					<AboutSection />
-					{/* <WorkSection /> */}
+					<WorkSection />
 					<ContactSection />
 					<FooterContainer />
 				</>
