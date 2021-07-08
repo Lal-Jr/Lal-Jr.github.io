@@ -27,9 +27,8 @@ export const Hamburger = styled.div`
 	@media (max-width: 768px) {
 		display: block;
 		position: fixed;
-		top: 0;
-		right: 0;
-		transform: translate(-100%, 45%);
+		top: 1rem;
+		right: 1rem;
 		font-size: 1.5rem;
 		cursor: pointer;
 		color: #fff;
@@ -44,8 +43,8 @@ export const NavLogo = styled.h1`
 	letter-spacing: 4px;
 
 	@media (max-width: 768px) {
-		margin: 0;
-		transform: translate(20%, 20%);
+		margin-left: 1rem;
+		top: 1rem;
 		font-size: 1.5rem;
 	}
 `;

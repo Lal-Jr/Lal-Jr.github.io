@@ -18,7 +18,7 @@ import {
 	barTwo,
 } from "../../assests/BarData.js";
 
-function AboutSection() {
+const AboutSection = () => {
 	return (
 		<>
 			<AboutContainer id="about">
@@ -54,6 +54,6 @@ function AboutSection() {
 			</AboutContainer>
 		</>
 	);
-}
+};
 
 export default AboutSection;

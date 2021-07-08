@@ -9,7 +9,7 @@ import {
 	Hamburger,
 } from "./Navbar.styles.jsx";
 
-function Navbar({ toggle }) {
+const Navbar = ({ toggle }) => {
 	const [, setClick] = useState(false);
 
 	const closeMenu = () => setClick(false);
@@ -75,6 +75,6 @@ function Navbar({ toggle }) {
 			</NavBar>
 		</>
 	);
-}
+};
 
 export default Navbar;
