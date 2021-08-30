@@ -25,7 +25,8 @@ export const Title = styled.h1`
 export const Content = styled.div`
 	display: flex;
 	justify-items: center;
-	width: min(90%, 80rem);
+	align-items: center;
+	// width: min(90%, 80rem);
 
 	@media (max-width: 768px) {
 		flex-direction: column;
@@ -44,6 +45,7 @@ export const Divider = styled.div`
 export const ContentWrapper = styled.div`
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	padding-inline: 10%;
 	flex-direction: column;
 

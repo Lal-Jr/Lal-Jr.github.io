@@ -10,6 +10,7 @@ export const CardContainer = styled.div`
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	margin: 1vh;
 	height: 38vh;
+	max-width:500px;
 	width: 66vh;
 	padding-inline: 1vh;
 
